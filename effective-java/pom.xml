@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>thinking-in-java</artifactId>
+    <artifactId>effective-java</artifactId>
     <packaging>jar</packaging>
 
-    <name>thinking-in-java</name>
+    <name>effective-java</name>
     <url>http://maven.apache.org</url>
 
     <properties>
