@@ -2,10 +2,9 @@ package object;
 
 /**
  * Created by IntelliJ IDEA.
- * User: tangguike
+ * User: ThomsonTang
  * Date: 8/6/12
  * Time: 10:21 AM
- * To change this template use File | Settings | File Templates.
  */
 public class Singleton {
     private static Singleton singleton = null;

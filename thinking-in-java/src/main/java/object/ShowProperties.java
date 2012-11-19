@@ -1,11 +1,12 @@
 package object;
 
+import java.util.Stack;
+
 /**
  * Created by IntelliJ IDEA.
- * User: tangguike
+ * User: ThomsonTang
  * Date: 8/3/12
  * Time: 10:27 AM
- * To change this template use File | Settings | File Templates.
  */
 public class ShowProperties {
     public static void main(String[] args) {
