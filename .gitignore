@@ -1,5 +1,5 @@
 #idea config files
-*.impl
+*.iml
 
 #Class files
 .class
