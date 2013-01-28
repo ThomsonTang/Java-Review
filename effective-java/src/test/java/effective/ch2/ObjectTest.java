@@ -1,10 +1,10 @@
 package effective.ch2;
 
+import effective.creatingdestroyingobjs.item1.StaticFactoryMethod;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

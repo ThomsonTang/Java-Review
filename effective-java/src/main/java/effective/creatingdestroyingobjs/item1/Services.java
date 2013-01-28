@@ -1,4 +1,7 @@
-package effective.ch2;
+package effective.creatingdestroyingobjs.item1;
+
+import effective.creatingdestroyingobjs.item1.Provider;
+import effective.creatingdestroyingobjs.item1.Service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

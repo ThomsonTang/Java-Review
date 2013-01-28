@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithms-4th/algorithms-4th.iml" filepath="$PROJECT_DIR$/algorithms-4th/algorithms-4th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/effective-java/effective-java.iml" filepath="$PROJECT_DIR$/effective-java/effective-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-practice-parent.iml" filepath="$PROJECT_DIR$/learn-practice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thinking-in-java/thinking-in-java.iml" filepath="$PROJECT_DIR$/thinking-in-java/thinking-in-java.iml" />
+    </modules>
+  </component>
+</project>
+

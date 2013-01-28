@@ -1,4 +1,4 @@
-package effective.ch2;
+package effective.creatingdestroyingobjs.item1;
 
 /**
  * Service interface.

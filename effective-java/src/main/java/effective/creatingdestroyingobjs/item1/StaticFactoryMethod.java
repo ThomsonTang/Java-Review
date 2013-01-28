@@ -1,11 +1,11 @@
-package effective.ch2;
+package effective.creatingdestroyingobjs.item1;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ * Consider static factory methods instead of constructors.
  *
  * @author Thomson Tang
  * @since 12-8-31

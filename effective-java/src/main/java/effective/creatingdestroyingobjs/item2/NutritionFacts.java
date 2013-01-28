@@ -1,8 +1,14 @@
-package effective.ch2;
+package effective.creatingdestroyingobjs.item2;
 
 /**
  * Builder Pattern
  * Consider a builder when faced with many constructor parameters.
+ *
+ * In summary, the Builder Pattern is a good choice when designing classes
+ * whose constructors or static factories would have more than a handful of
+ * parameters, especially if most of those parameters are optional.
+ * Client code is much easier to read and write than with the traditional
+ * telescoping constructor pattern, and builders are much safer than JavaBeans.
  *
  * @author Thomson Tang
  * @since 12-9-3
