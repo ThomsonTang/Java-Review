@@ -3,3 +3,9 @@
 
 #Class files
 .class
+
+#.idea folder
+.idea/
+
+#all target folder
+*/target/
