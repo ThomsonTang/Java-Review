@@ -5,14 +5,14 @@ package datastructure;
  ******************************************************/
 import java.util.Iterator;
 
-public class Queue<Item> implements Iterable<Item> {
+public class Queue<E> implements Iterable<E> {
     private int N; //number of elements on queue.
     private Node first; //beginning of queue.
     private Node last; //end of queue.
 
     //helper linked list class.
     private class Node {
-        private Item item;
+        private E item;
         private Node node;
     }
 
@@ -25,9 +25,9 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Is the queue empty
      */
     public boolean isEmpty() {
+     * Is the queue empty
         return first == null;
     }
 
@@ -50,7 +50,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Add the item to the queue.
      */
-    public void enqueue(Item item) {
+    public void enqueue(E item) {
         Node x = new Node();
         x.item = item;
         if(isEmpty()) {
@@ -67,11 +67,11 @@ public class Queue<Item> implements Iterable<Item> {
      * Remove and return the item on the queue least recently added.
      * Throw an exception if the queue is empty.
      */
-    public Item dequeue() {
+    public E dequeue() {
         if(isEmpty()) {
             throw new RuntimeException("Queue underflow!");
         }
-        Item item = first.item;
+        E item = first.item;
         first = first.next;
         N--;
         if(isEmpty()) last = null;
@@ -80,17 +80,17 @@ public class Queue<Item> implements Iterable<Item> {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for(Item item : this) {
+        for(E item : this) {
             sb.append(item + " ");
         }
         return sb.toString();
     }
 
-    public Iterator<Item> iterator() {
+    public Iterator<E> iterator() {
         return new ListIterator();
     }
 
-    private class ListIterator implements Iterator<Item> {
+    private class ListIterator implements Iterator<E> {
         private Node current = first;
 
         public boolean hasNext() {
@@ -101,11 +101,11 @@ public class Queue<Item> implements Iterable<Item> {
             throw new UnsupportedOperationException();
         }
 
-        public Item next() {
+        public E next() {
             if(!hasNext()) {
                 throw new NoSuchElementException();
             }
-            Item item = current.item;
+            E item = current.item;
             current = current.next;
             return item;
         }
