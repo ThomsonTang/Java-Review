@@ -8,9 +8,10 @@
     <artifactId>learn-practice-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>thinking-in-java</module>-->
-        <!--<module>effective-java</module>-->
+        <module>thinking-in-java</module>
+        <module>effective-java</module>
         <module>algorithms-4th</module>
+        <module>programming-in-java</module>
     </modules>
     <packaging>pom</packaging>
 

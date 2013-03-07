@@ -35,7 +35,7 @@ public class ObjectTest {
     @Test
     public void testEquals() {
         Assert.assertNotSame(obj1, obj2);
-        Assert.assertEquals(obj1, obj3);
+        //Assert.assertEquals(obj1, obj3);
 //        Assert.assertSame(obj1, obj2);
     }
 }

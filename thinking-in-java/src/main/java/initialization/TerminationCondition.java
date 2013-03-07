@@ -21,8 +21,10 @@ class Book {
     protected void finalize() throws Throwable {
         if (checkedOut)
             System.out.println("Error: checked out");
+        else
+            System.out.println("checking out");
         //Normally, you'll also do this:
-//        super.finalize(); //Call the base-class version
+        super.finalize(); //Call the base-class version
     }
 }
 
@@ -32,7 +34,7 @@ public class TerminationCondition {
         //Proper clean up:
         novel.checkIn();
         //Drop the reference. forget to clean up:
-        new Book(true);
+        //new Book(true);
         // Force garbage collection & finalization:
         System.gc();
     }
