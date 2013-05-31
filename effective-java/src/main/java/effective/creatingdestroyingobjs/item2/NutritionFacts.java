@@ -11,7 +11,7 @@ package effective.creatingdestroyingobjs.item2;
  * telescoping constructor pattern, and builders are much safer than JavaBeans.
  *
  * @author Thomson Tang
- * @since 12-9-3
+ * @since 1.0-SNAPSHOT
  */
 public class NutritionFacts {
     private final int servingSize;
