@@ -25,9 +25,9 @@ public class Queue<E> implements Iterable<E> {
     }
 
     /**
+     * Is the queue empty
      */
     public boolean isEmpty() {
-     * Is the queue empty
         return first == null;
     }
 
@@ -42,7 +42,7 @@ public class Queue<E> implements Iterable<E> {
      * return the item least recently added to the queue.
      * throw an exception if the queue is empty.
      */
-    public Item peek() {
+    public E peek() {
         if(isEmpty()) throw new RuntimeException("Queue underflow!");
         return first.item;
     }
