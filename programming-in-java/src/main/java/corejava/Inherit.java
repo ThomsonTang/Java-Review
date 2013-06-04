@@ -14,6 +14,12 @@ public class Inherit {
         System.out.print( s1.value );
         System.out.print( s2.value );
         System.out.println( "a" + 100%3 + 100 );
+
+        String s = ".a.b.c.";
+        String[] arr = s.split("\\.");
+        System.out.println("length of arra: " + arr.length);
+        System.out.println("first element of arra: " + arr[0]);
+        System.out.println("second element of arra: " + arr[1]);
     }
 
     static void change( SubClass s2 ) {

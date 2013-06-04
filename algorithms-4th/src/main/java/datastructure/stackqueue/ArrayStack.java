@@ -27,6 +27,14 @@ public class ArrayStack implements Stack {
             return null;
         }
     }
+    
+    public Object top() {
+        if(!isEmpty()) {
+            return theArray[topOfStack];
+        } else {
+            return null;
+        }
+    }
 
     public boolean isFull() {
         return (topOfStack == theArray.length);

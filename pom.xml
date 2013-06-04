@@ -10,10 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>algorithms-4th</module>
-        <module>effective-java</module>
-        <module>junit-in-action</module>
         <module>thinking-in-java</module>
+        <module>effective-java</module>
+        <module>algorithms-4th</module>
+        <module>programming-in-java</module>
+        <module>junit-in-action</module>
     </modules>
 
     <properties>
