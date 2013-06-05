@@ -9,12 +9,12 @@ package enumerated.menu;
  */
 public interface Food {
     enum Appetizer implements Food {
-        SALAD, SOUP, SPRING_ROLLS;
+        SALAD, SOUP, SPRING_ROLLS
     }
     enum MainCourse implements Food {
-        LASAGNE, BURRITO, PAD_THAi;
+        LASAGNE, BURRITO, PAD_THAi
     }
     enum Dessert implements Food {
-        TIRAMISU, GELATO, BLACK_FOREST_CAKE;
+        TIRAMISU, GELATO, BLACK_FOREST_CAKE
     }
 }
