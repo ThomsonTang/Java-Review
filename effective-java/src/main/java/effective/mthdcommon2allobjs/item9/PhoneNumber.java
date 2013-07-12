@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ * Always override hashCode when you override equals
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
