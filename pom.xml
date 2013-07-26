@@ -15,6 +15,7 @@
         <module>algorithms-4th</module>
         <module>programming-in-java</module>
         <module>junit-in-action</module>
+        <module>design-pattern</module>
     </modules>
 
     <properties>

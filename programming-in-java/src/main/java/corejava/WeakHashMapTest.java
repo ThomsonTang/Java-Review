@@ -20,8 +20,8 @@ public class WeakHashMapTest {
 
         map.remove(a);
 
-        //a = null;
-        b = null;
+//        a = null;
+//        b = null;
 
         System.gc();
 

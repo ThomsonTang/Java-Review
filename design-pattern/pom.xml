@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
-        <groupId>com.thomsontang.learnpractice</groupId>
         <artifactId>learn-practice-parent</artifactId>
+        <groupId>com.thomsontang.learnpractice</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <artifactId>algorithms-4th</artifactId>
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>design-pattern</artifactId>
     <packaging>jar</packaging>
 
-    <name>algorithms-4th</name>
+    <name>design-pattern</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -23,10 +19,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>edu.princeton.cs.algs4</groupId>
-            <artifactId>algs4-stdlib</artifactId>
-            <version>1.0</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
