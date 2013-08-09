@@ -16,6 +16,8 @@
         <module>programming-in-java</module>
         <module>junit-in-action</module>
         <module>design-pattern</module>
+        <module>concurrency-in-practice</module>
+        <module>ds-algorithms-in-java</module>
     </modules>
 
     <properties>
