@@ -3,7 +3,7 @@ package decoratorpattern;
 import java.io.*;
 
 /**
- * Created with IntelliJ IDEA.
+ * Client Test decorator pattern.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

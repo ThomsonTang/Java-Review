@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created with IntelliJ IDEA.
+ * Decorator Pattern --- decorating objects.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
