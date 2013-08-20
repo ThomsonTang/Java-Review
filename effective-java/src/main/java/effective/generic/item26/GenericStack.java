@@ -1,7 +1,9 @@
 package effective.generic.item26;
 
-import java.util.Arrays;
-import java.util.EmptyStackException;
+import java.lang.Integer;
+import java.lang.Iterable;
+import java.lang.Number;
+import java.util.*;
 
 /**
  * Initial attempt to generify stack
@@ -55,14 +57,38 @@ public class GenericStack<E> {
             elements = Arrays.copyOf(elements, 2 * size + 1);
     }
 
+    //Wildcard type for parameter that serves as an E producer
+    public void pushAll(Iterable<? extends E> src) {
+        for (E e : src) {
+            push(e);
+        }
+    }
+
+    //Wildcard type for parameter that serves as an E consumer
+    public void popAll(Collection<? super E> des) {
+        des.add(pop());
+    }
+
     public static void main(String[] args) {
-        GenericStack<String> stack = new GenericStack<String>();
-        args = new String[]{"first", "second", "third"};
-        for (String arg : args) {
-            stack.push(arg);
-        }
-        while (!stack.isEmpty()) {
-            System.out.println(stack.pop().toUpperCase());
-        }
+//        GenericStack<String> stack = new GenericStack<String>();
+//        args = new String[]{"first", "second", "third"};
+//        for (String arg : args) {
+//            stack.push(arg);
+//        }
+//        while (!stack.isEmpty()) {
+//            System.out.println(stack.pop().toUpperCase());
+//        }
+
+        GenericStack<Number> numberGenericStack = new GenericStack<Number>();
+        List<Integer> integerList = new ArrayList<Integer>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(3);
+        Iterable<Integer> integers = integerList;
+
+        numberGenericStack.pushAll(integers);
+
+        List<Object> list = new ArrayList<Object>();
+        numberGenericStack.popAll(list);
     }
 }
