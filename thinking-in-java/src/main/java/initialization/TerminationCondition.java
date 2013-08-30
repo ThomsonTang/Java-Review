@@ -3,8 +3,8 @@ package initialization;
 /**
  * Using finalize() to detect an object that hasn't been properly cleaned up.
  *
- * User: tangguike
- * Date: 8/19/12
+ * @author Thomson Tang
+ * @since 1.0-SNAPSHOT
  */
 class Book {
     boolean checkedOut = false;
