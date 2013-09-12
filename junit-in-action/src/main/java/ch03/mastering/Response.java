@@ -8,4 +8,5 @@ package ch03.mastering;
  * @date 5/31/13
  */
 public interface Response {
+    String getName();
 }
