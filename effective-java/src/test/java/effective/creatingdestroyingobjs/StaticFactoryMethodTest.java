@@ -29,7 +29,7 @@ public class StaticFactoryMethodTest {
 
     @Test
     public void testSameInstance() {
-        Assert.assertSame(staticFactoryMethod1, staticFactoryMethod2);
+        Assert.assertNotSame(staticFactoryMethod1, staticFactoryMethod2);
     }
 
 
