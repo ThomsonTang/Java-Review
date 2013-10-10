@@ -28,7 +28,7 @@ public class Inherit {
     }
 }
 
-class SubClass {
+class SubClass{
     int value;
 
     public SubClass(int value) {
