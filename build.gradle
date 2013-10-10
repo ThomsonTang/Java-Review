@@ -16,4 +16,8 @@ subprojects {
     }
 }
 
-project(':')
+project(':thinking-in-java') {
+    dependencies {
+        compile 'javassist:javassist:3.12.1.GA'
+    }
+}
