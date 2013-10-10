@@ -1,0 +1,19 @@
+allprojects {
+    group = 'com.thomsontang.java'
+    version = '1.0-SNAP-SHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+    }
+}
+
+project(':')
