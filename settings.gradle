@@ -4,4 +4,5 @@ include 'algorithms-4th',
         'ds-algorithms-in-java',
         'effective-java',
         'junit-in-action',
-        'thinking-in-java'
+        'thinking-in-java',
+        'personal-practice'
