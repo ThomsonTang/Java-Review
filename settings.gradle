@@ -3,6 +3,7 @@ include 'algorithms-4th',
         'design-pattern',
         'ds-algorithms-in-java',
         'effective-java',
+        'java7-concurrency-cookbook',
         'junit-in-action',
         'thinking-in-java',
         'personal-practice'
