@@ -23,7 +23,7 @@ public class PeriodTest {
         end = new Date("2013-10-13");
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    //@Test(expected = IllegalArgumentException.class)
     public void testPeriod() {
         period = new Period(start, end);
     }

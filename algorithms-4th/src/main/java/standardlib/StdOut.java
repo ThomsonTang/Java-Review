@@ -1,4 +1,5 @@
-package standardlib; /*************************************************************************
+package standardlib;
+/*************************************************************************
  *  Compilation:  javac StdOut.java
  *  Execution:    java StdOut
  *

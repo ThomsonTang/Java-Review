@@ -15,10 +15,35 @@ subprojects {
     dependencies {
         testCompile 'junit:junit:4.11'
     }
+
+    version = '1.0-SNAPSHOT'
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
 }
 
 project(':thinking-in-java') {
     dependencies {
         compile 'javassist:javassist:3.12.1.GA'
+    }
+}
+
+project(':algorithms-4th') {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        compile 'stdlib:stdlib:1.0'
+    }
+}
+
+project(':concurrency-in-practice') {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        compile 'javaee:javaee-api:5'
+        compile 'jcip-annotations:jcip-annotations:1.0'
     }
 }
