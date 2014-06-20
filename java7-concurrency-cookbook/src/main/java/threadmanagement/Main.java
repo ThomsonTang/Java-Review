@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Created with IntelliJ IDEA.
+ * 1. create 10 threads which use a class that implements Runnable interface.
+ * 2. set the priority(max or min) and name for each thread.
  *
  * @author Thomson Tang
  * @date 11/11/13
@@ -51,7 +52,7 @@ public class Main {
         }
     }
 
-    public static void writeThreadInfo(PrintWriter printWriter, Thread thread, Thread.State state) {
+    private static void writeThreadInfo(PrintWriter printWriter, Thread thread, Thread.State state) {
         printWriter.printf("Main: ID %d - %s\n", thread.getId(), thread.getName());
         printWriter.printf("Main: Priority: %d\n", thread.getPriority());
         printWriter.printf("Main: Old state: %s\n", state);

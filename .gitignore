@@ -9,6 +9,9 @@
 
 .gradle/
 
+.DS_Store
+
 #all target folder
 */target/
 */build/
+*/out/

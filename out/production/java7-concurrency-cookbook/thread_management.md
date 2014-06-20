@@ -24,18 +24,6 @@ There are some attributes:
 - Priority: store the priority of the Thread objects. priority between [1, 10]. Change the priority of thread is not recommended.
 - Status: store the status of thread. In java, six states: [new, runnable, blocked, waiting, timed_waiting, terminated]
 
-*You can't modify the ID or status of a thread. The Thread class doesn't implement the setId() and setStatus() method to allow their modification.*
-
-### Interrupting a thread
-
-The *Thread* class has an attribution that stores a boolean value indicating whether the thread has been interrupted or not.
-When you call the *interrupt()* method of a thread, you set that attribute to true. The *isInterrupted()* only return the value of that attribution.
-
-The static method, *interrupted()*, checks whether the current executing thread has been interrupted or not.
-
-
-### Controlling the interruption of a thread
-
 
 
 

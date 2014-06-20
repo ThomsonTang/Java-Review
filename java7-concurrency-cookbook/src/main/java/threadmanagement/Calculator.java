@@ -1,7 +1,7 @@
 package threadmanagement;
 
 /**
- * Created with IntelliJ IDEA.
+ * Building Calculator class that implements Runnable interface.
  *
  * @author Thomson Tang
  * @date 11/11/13
