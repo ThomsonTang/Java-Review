@@ -12,15 +12,15 @@ import java.util.concurrent.TimeUnit;
  * @date 6/26/14
  */
 public class FileClock implements Runnable {
-    @Override
-    public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.printf("%s, %s\n", i, new Date());
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                System.out.printf("The FileClock has been interrupted.\n");
-            }
-        }
-    }
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.printf("%s, %s\n", i, new Date());
+			try {
+				TimeUnit.SECONDS.sleep(1);
+			} catch (InterruptedException e) {
+				System.out.printf("The FileClock has been interrupted.\n");
+			}
+		}
+	}
 }

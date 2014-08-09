@@ -58,4 +58,24 @@ If this exception is thrown inside the `run()` method of a Thread object, we hav
 
 > **Unchecked Exception**: don't have to be specified or caught. For example, *NumberFormatException*.
 
-If this exception is thrown inside the `run()` method of a *Thread* object, the default behavior is to write stack trace in console and exit the program. Fortunately, java provides a mechanism to catch and treat the unchecked exceptions thrown in a *Thread* object to avoid the program ending.
+If this exception is thrown inside the `run()` method of a *Thread* object, the default behavior is to write stack trace in console and exit the program. Fortunately, java provides a mechanism to catch and treat the unchecked exceptions thrown in a *Thread* object to avoid the program ending. There are steps below:
+1. Define an exception handler class to treat the unchecked exception. The class must implement **Thread.UncaughtExceptionHandler** and override the **uncaughtException()** method.
+````````````````````````````````````````````````````````````````````````````````````````````````````
+public class ExceptionHandler implements Thread.UncaughtExceptionHandler {
+    @Override
+    public void uncaughtException(Thread t, Throwable e) {
+    //handle the exceptions
+    }
+}
+````````````````````````````````````````````````````````````````````````````````````````````````````
+2. Set the exception handler to the thread. 
+```````````````````````````````````````````````````````````````````````````````
+ Thread thread = new Thread(task);
+ thread.setUncaughtExceptionHandler(new ExceptionHandler());
+```````````````````````````````````````````````````````````````````````````````
+
+When an uncaught exception is thrown in **Thread**, the JVM looks for three possible handlers for this exception:
+- First, it looks for the handler set to the thread as the above example.
+- If the handler doesn't exist, it then looks for **ThreadGroup** of the **Thread** objects.
+- If it also doesn't exist, the JVM looks for the default uncaught exception handler.
+If none of the handlers exist, the JVM writes the stack trace of the exception in the console and exit the program.

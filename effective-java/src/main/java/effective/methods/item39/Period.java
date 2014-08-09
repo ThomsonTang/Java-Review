@@ -1,9 +1,9 @@
-package effective.methods;
+package effective.methods.item39;
 
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
+ * Make defensive copies when needed
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
