@@ -34,7 +34,7 @@ public class TerminationCondition {
         //Proper clean up:
         novel.checkIn();
         //Drop the reference. forget to clean up:
-        //new Book(true);
+        new Book(true);
         // Force garbage collection & finalization:
         System.gc();
     }

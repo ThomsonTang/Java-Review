@@ -1,1 +1,14 @@
 apply plugin: 'java'
+
+version = "1.0"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile "javassist:javassist:3.8.0.GA"
+
+	testCompile "junit:junit:4.11"
+}
