@@ -1,5 +1,7 @@
 #idea config files
 *.iml
+*.ipr
+*.iws
 
 #Class files
 *.class
