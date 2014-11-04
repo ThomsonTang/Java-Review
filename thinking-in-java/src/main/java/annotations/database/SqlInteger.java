@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created with IntelliJ IDEA.
+ * Indicate the database type integer.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

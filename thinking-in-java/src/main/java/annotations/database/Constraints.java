@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * for the JavaBean fields.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

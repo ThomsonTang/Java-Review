@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created with IntelliJ IDEA.
+ * This annotation is for a bean that tell the annotation processor that it should create a database table.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
@@ -15,5 +15,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE) // Applies to classes only.
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DBTable {
-    public String name() default "";
+    public String name() default ""; // supply the name for the database table that the processor will create.
 }

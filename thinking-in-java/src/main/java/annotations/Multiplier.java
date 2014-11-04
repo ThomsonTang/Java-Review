@@ -1,13 +1,16 @@
 package annotations;
 
 /**
- * Created with IntelliJ IDEA.
+ * This class provides a public method which can become part of
+ * useful interface.
+ *
+ * APT-based annotation processing.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
  * @date 9/4/13
  */
-@ExtractInterface("IMultiplier")
+@ExtractInterface("IMultiplier") // given the name of the interface to create.
 public class Multiplier {
     public int multiply(int x, int y) {
         int total = 0;
@@ -17,6 +20,7 @@ public class Multiplier {
         return total;
     }
 
+    //this method is not public, so it is not part of the interface.
     private int add(int x, int y) {
         return x + y;
     }

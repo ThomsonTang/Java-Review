@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
+ * Implementing the database annotation processor which reads in a class file, checks for
+ * its database annotations and generates the SQL command for making the database.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
@@ -31,7 +32,7 @@ public class TableCreator {
             if (tableName.length() < 1) {
                 tableName = cl.getName().toUpperCase();
             }
-            List<String> columDefs = new ArrayList<String>();
+            List<String> columDefs = new ArrayList<>();
             for (Field field : cl.getDeclaredFields()) {
                 String columnName = null;
                 Annotation[] annotations = field.getDeclaredAnnotations();
@@ -55,12 +56,12 @@ public class TableCreator {
                     } else {
                         columnName = sqlString.name();
                     }
-                    columDefs.add(columnName + "VARCHAR(" + sqlString.value() + ")" + getConstraints(sqlString.constraints()));
+                    columDefs.add(columnName + " VARCHAR(" + sqlString.value() + ")" + getConstraints(sqlString.constraints()));
                 }
 
                 StringBuilder createCommand = new StringBuilder("CREATE TABLE " + tableName + "(");
                 for (String columnDef : columDefs) {
-                    createCommand.append("\n    " + columnDef + ",");
+                    createCommand.append("\n    ").append(columnDef).append(",");
                 }
                 //Remove tail comma
                 String tableCreate = createCommand.substring(0, createCommand.length() - 1) + ");";

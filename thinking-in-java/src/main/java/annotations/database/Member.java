@@ -1,7 +1,7 @@
 package annotations.database;
 
 /**
- * Created with IntelliJ IDEA.
+ * A simple bean that use database annotations.
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
