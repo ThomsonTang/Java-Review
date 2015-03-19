@@ -1,7 +1,8 @@
 package commandpattern;
 
 /**
- * Created with IntelliJ IDEA.
+ * 车库门打开操作
+ * 打开车库门也抽象为一个命令，实现Command接口
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

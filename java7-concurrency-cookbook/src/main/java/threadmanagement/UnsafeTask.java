@@ -11,11 +11,10 @@ import java.util.concurrent.TimeUnit;
  * @date 7/8/14
  */
 public class UnsafeTask implements Runnable {
-    private Date startDate;
+    Date startDate = new Date();
 
     @Override
     public void run() {
-        startDate = new Date();
         System.out.printf("Start thread: %s: %s\n", Thread.currentThread().getId(), startDate);
 
         try {

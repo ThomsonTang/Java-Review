@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Created with IntelliJ IDEA.
+ * 遥控器测试场景
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

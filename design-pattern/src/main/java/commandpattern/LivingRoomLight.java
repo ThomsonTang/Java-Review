@@ -1,7 +1,7 @@
 package commandpattern;
 
 /**
- * Created with IntelliJ IDEA.
+ * 卧室的灯, 实现了灯的统一接口Light
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT

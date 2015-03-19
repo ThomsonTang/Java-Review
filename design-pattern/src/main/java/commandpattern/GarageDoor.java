@@ -1,7 +1,7 @@
 package commandpattern;
 
 /**
- * Created with IntelliJ IDEA.
+ * 车库门
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
