@@ -2,42 +2,44 @@
 
 ### Create and running a thread
 
- - Extending *Thread* class and overriding the *run()* method.
+ - Extending *Thread* class and overriding the `run()` method.
  - Building a class that implements *Runnable* interface and then creating an object of the *Thread* class passing the *Runnable* object as a parameter.
- 
- 1. Main thread: Every java program has at least one execution thread. When you run the program, the JVM runs this execution thread that calls the *main()* method in the program. 
- 2. Another thread: When call the *start()* method of a *Thread* object, we are creating another execution thread.
- 3. End: A java program ends when all its threads finish (more specifically, when all its no-daemon thread finish). If the initial thread(the "main thread") ends, the rest of the threads will continue their execution until they finish. If one of the threads use *System.exit()* instruction to end the execution of the program, all the thread end their execution.
- 
- *Only calling the start() method creates a new execution thread.*
+
+ 1. **Main thread**: Every java program has at least one execution thread. When you run the program, the JVM runs this execution thread that calls the *main()* method in the program.
+ 2. **Another thread**: When call the `start()` method of a *Thread* object, we are creating another execution thread.
+ 3. End: A java program ends when all its threads finish (more specifically, when all its no-daemon thread finish). If the initial thread(the "main thread") ends, the rest of the threads will continue their execution until they finish. If one of the threads use `System.exit()` instruction to end the execution of the program, all the thread end their execution.
+
+ *Only calling the `start()` method creates a new execution thread.*
 
 ### Getting and setting thread information
 
 There are some attributes:
 
-- ID: store unique identifier for each Thread.
-- Name: store the name of the Thread.
-- Priority: store the priority of the Thread objects. priority between [1, 10]. Change the priority of thread is not recommended.
-- Status: store the status of thread. In java, six states: [new, runnable, blocked, waiting, timed_waiting, terminated]
+- **ID**: store unique identifier for each Thread.
+- **Name**: store the name of the Thread.
+- **Priority**: store the priority of the Thread objects. priority between [1, 10]. Change the priority of thread is not recommended.
+- **Status**: store the status of thread.
 
-*You can't modify the ID or status of a thread. The Thread class doesn't implement the setId() and setStatus() method to allow their modification.*
+> In java, six states: [new, runnable, blocked, waiting, timed_waiting, terminated]
+
+*You can't modify the ID or status of a thread. The Thread class doesn't implement the `setId()` and `setStatus()` method to allow their modification.*
 
 ### Interrupting a thread
 
 The *Thread* class has an attribution that stores a boolean value indicating whether the thread has been interrupted or not.
-When you call the *interrupt()* method of a thread, you set that attribute to true. The *isInterrupted()* only return the value of that attribution.
+When you call the `interrupt()` method of a thread, you set that attribute to true. The `isInterrupted()` only return the value of that attribution.
 
-The static method, *interrupted()*, checks whether the current executing thread has been interrupted or not.
+The static method, `interrupted()`, checks whether the current executing thread has been interrupted or not.
 
 ### Controlling the interruption of a thread
 
-If the thread implements a complex algorithm divided into some methods, or it has method recursive calls, we can use a better mechanism to control the interruption of the thread. Java provides *InterruptedException* exception for this purpose.
+If the thread implements a complex algorithm divided into some methods, or it has method recursive calls, we can use a better mechanism to control the interruption of the thread. Java provides `InterruptedException` exception for this purpose.
 
 ### Sleeping and resuming a thread
 
-Use the *sleep()* method of the *Thread* class to suspend the execution of the thread. When the sleeping time ends, the thread continues with its execution in the isntruction, after the *sleep()* method calls, when the JVM assigns them CPU time.   
+Use the `sleep()` method of the *Thread* class to suspend the execution of the thread. When the sleeping time ends, the thread continues with its execution in the instruction, after the `sleep()` method calls, when the JVM assigns them CPU time.   
 
-Another possiblity is to use the *sleep()* method of an element of the *TimeUnit* enumeration. This method uses the *sleep()* method of the *Thread* class to put the current thread to sleep, but it receives the parameter in the unit that it  represents and converts it to milliseconds.
+Another possibility is to use the `sleep()` method of an element of the *TimeUnit* enumeration. This method uses the `sleep()` method of the *Thread* class to put the current thread to sleep, but it receives the parameter in the unit that it represents and converts it to milliseconds.
 
 ### Waiting for the finalization of a thread
 
@@ -60,15 +62,17 @@ If this exception is thrown inside the `run()` method of a Thread object, we hav
 
 If this exception is thrown inside the `run()` method of a *Thread* object, the default behavior is to write stack trace in console and exit the program. Fortunately, java provides a mechanism to catch and treat the unchecked exceptions thrown in a *Thread* object to avoid the program ending. There are steps below:
 1. Define an exception handler class to treat the unchecked exception. The class must implement **Thread.UncaughtExceptionHandler** and override the **uncaughtException()** method.
-````````````````````````````````````````````````````````````````````````````````````````````````````
+
+```java
 public class ExceptionHandler implements Thread.UncaughtExceptionHandler {
     @Override
     public void uncaughtException(Thread t, Throwable e) {
     //handle the exceptions
     }
 }
-````````````````````````````````````````````````````````````````````````````````````````````````````
-2. Set the exception handler to the thread. 
+```
+
+2. Set the exception handler to the thread.
 ```````````````````````````````````````````````````````````````````````````````
  Thread thread = new Thread(task);
  thread.setUncaughtExceptionHandler(new ExceptionHandler());
