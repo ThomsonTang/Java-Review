@@ -4,7 +4,14 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created with IntelliJ IDEA.
+ * The safe task which use thread-local variable to save the <i>startDate </i> attribute.
+ *
+ * <p> Thread-local variables store a value of an attribute for each {@link Thread} that uses one fo
+ * these variables. You can read the value using the <code>get()</code> method and change the value
+ * using the <code>set()</code> method. The first time you access the value of a thread-local
+ * variable, if it has no value for the Thread object that it is calling, the thread-local variable
+ * calls the <code>initialValue()</code> method to assign a value for that Thread and return the
+ * initial value.</p>
  *
  * @author ThomsonTang
  * @date 7/8/14

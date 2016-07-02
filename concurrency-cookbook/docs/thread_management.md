@@ -54,14 +54,15 @@ In some situations, we will have to wait for the finalization of a thread. For t
 Java has a specifal kind of thread called *daemon* thread. These kinds of threads have very low priority and normally only executes when no other thread of the same program is running. When daemon threads are the only threads running in a program, the JVM ends the program finishing these threads.
 
 ### Processing uncontrolled exception in a thread
-> **Checked Exception**: must be specified in the throws clause of a method or caught inside them. For example, *IOException*, *ClassNotFoundException*.
+> **Checked Exception**: must be specified in the throws clause of a method or caught inside them. For example, `IOException`, `ClassNotFoundException`.
 
 If this exception is thrown inside the `run()` method of a Thread object, we have to catch and treat, because the `run()` method doesn't accept a throws clause.
 
-> **Unchecked Exception**: don't have to be specified or caught. For example, *NumberFormatException*.
+> **Unchecked Exception**: don't have to be specified or caught. For example, `NumberFormatException`.
 
 If this exception is thrown inside the `run()` method of a *Thread* object, the default behavior is to write stack trace in console and exit the program. Fortunately, java provides a mechanism to catch and treat the unchecked exceptions thrown in a *Thread* object to avoid the program ending. There are steps below:
-1. Define an exception handler class to treat the unchecked exception. The class must implement **Thread.UncaughtExceptionHandler** and override the **uncaughtException()** method.
+
+1. Define an exception handler class to treat the unchecked exception. The class must implement `Thread.UncaughtExceptionHandler` and override the `uncaughtException()` method.
 
 ```java
 public class ExceptionHandler implements Thread.UncaughtExceptionHandler {
@@ -73,10 +74,11 @@ public class ExceptionHandler implements Thread.UncaughtExceptionHandler {
 ```
 
 2. Set the exception handler to the thread.
-```````````````````````````````````````````````````````````````````````````````
+
+```java
  Thread thread = new Thread(task);
  thread.setUncaughtExceptionHandler(new ExceptionHandler());
-```````````````````````````````````````````````````````````````````````````````
+ ```
 
 When an uncaught exception is thrown in **Thread**, the JVM looks for three possible handlers for this exception:
 - First, it looks for the handler set to the thread as the above example.

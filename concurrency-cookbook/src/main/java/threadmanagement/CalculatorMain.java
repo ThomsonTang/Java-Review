@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @author Thomson Tang
  * @date 11/11/13
  */
-public class Main {
+public class CalculatorMain {
     public static void main(String[] args) throws IOException {
         Thread[] threads = new Thread[10];
         Thread.State status[] = new Thread.State[10];
@@ -58,5 +58,6 @@ public class Main {
         printWriter.printf("Main: Old state: %s\n", state);
         printWriter.printf("Main: New state: %s\n", thread.getState());
         printWriter.printf("Main: *****************************************************\n");
+        printWriter.flush();
     }
 }

@@ -3,6 +3,9 @@ package threadmanagement;
 /**
  * Implement a class to treat the unchecked exception.
  *
+ * In this method, we can release the system resource, when caught the exception, or close some
+ * socket, connections and so on.
+ *
  * @author ThomsonTang
  * @date 7/2/14
  */

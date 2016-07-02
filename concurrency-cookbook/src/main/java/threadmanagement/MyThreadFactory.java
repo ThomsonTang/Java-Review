@@ -7,7 +7,11 @@ import java.util.List;
 import java.util.concurrent.ThreadFactory;
 
 /**
- * Created by Intellij idea.
+ * Define a thread factory will be used to create threads.
+ *
+ * <p> Java provides an interface, the {@link java.util.concurrent.ThreadFactory} interface to
+ * implement a {@code Thread} object factory. Some advanced utilities of the Java concurrency API
+ * use thread factories to create threads. </p>
  *
  * @author Thomson Tang
  */
@@ -22,7 +26,8 @@ public class MyThreadFactory implements ThreadFactory {
         stats = new ArrayList<>();
     }
 
-    @Override public Thread newThread(Runnable r) {
+    @Override
+    public Thread newThread(Runnable r) {
         Thread t = new Thread(r, String.format("%s-Thread_%s", name, counter));
         counter++;
         stats.add(String.format("Created thread %d with name %s on %s\n", t.getId(), t.getName(), new Date()));

@@ -1,0 +1,22 @@
+allprojects {
+    apply plugin: 'java'
+
+    group 'com.thomson.java.review'
+    version '1.0.0-SNAPSHOT'
+
+    ext {
+        junitVersion = "4.11"
+        slf4jVersion = "1.7.21"
+        logbackVersion = "1.1.7"
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        compile "org.slf4j:slf4j-api:${slf4jVersion}"
+        compile "ch.qos.logback:logback-classic:${logbackVersion}"
+        testCompile "junit:junit:${junitVersion}"
+    }
+}
