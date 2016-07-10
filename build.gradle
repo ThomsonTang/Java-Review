@@ -5,9 +5,13 @@ allprojects {
     version '1.0.0-SNAPSHOT'
 
     ext {
+        javaeeApiVersion = "7.0"
+        javassistVersion = "3.8.0.GA"
         junitVersion = "4.11"
         slf4jVersion = "1.7.21"
         logbackVersion = "1.1.7"
+        mysqlConnectorVersion = "5.1.33"
+        jettyVersion = "6.1.26"
     }
 
     repositories {

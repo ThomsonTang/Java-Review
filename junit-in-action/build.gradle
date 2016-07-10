@@ -1,14 +1,5 @@
-apply plugin: 'java'
 apply plugin: 'idea'
 
-version = "1.0"
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
-
 dependencies {
-    compile 'org.mortbay.jetty:jetty:6.1.26'
-    testCompile "junit:junit:4.11"
+    compile "org.mortbay.jetty:jetty:${jettyVersion}"
 }
