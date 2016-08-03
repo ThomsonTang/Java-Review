@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * Waiting for the finalization of a thread.
  *
  * @author ThomsonTang
- * @date 6/30/14
+ * @version 6/30/14
  */
 public class DataSourcesLoader implements Runnable {
     @Override

@@ -7,7 +7,7 @@ package enumerated;
  * object.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 enum Search {
     HITHER, YON

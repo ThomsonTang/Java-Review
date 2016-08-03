@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/30/13
+ * @version 8/30/13
  */
 public enum Phase1 {
     SOLID, LIQUID, GAS;

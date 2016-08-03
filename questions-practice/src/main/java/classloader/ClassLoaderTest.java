@@ -8,7 +8,7 @@ import java.util.logging.Logger;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 10/31/13
+ * @version 10/31/13
  */
 public class ClassLoaderTest {
     public static void main(String[] args) {

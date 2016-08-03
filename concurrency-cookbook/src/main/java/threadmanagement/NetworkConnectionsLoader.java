@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * Sleep 6 seconds for the loader beginning and finished.
  *
  * @author ThomsonTang
- * @date 7/1/14
+ * @version 7/1/14
  */
 public class NetworkConnectionsLoader implements Runnable {
     @Override

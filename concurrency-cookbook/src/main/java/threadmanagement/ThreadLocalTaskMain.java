@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * The main class to test the use of ThreadLocal or not.
  *
  * @author ThomsonTang
- * @date 7/8/14
+ * @version 7/8/14
  */
 public class ThreadLocalTaskMain {
     public static void main(String[] args) {

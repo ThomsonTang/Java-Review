@@ -7,7 +7,7 @@ import java.util.Observable;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/29/13
+ * @version 7/29/13
  */
 public class WeatherData2 extends Observable {
     private float temperature;

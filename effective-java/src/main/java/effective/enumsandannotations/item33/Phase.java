@@ -5,7 +5,7 @@ package effective.enumsandannotations.item33;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/29/13
+ * @version 8/29/13
  */
 public enum Phase {
     SOLID,

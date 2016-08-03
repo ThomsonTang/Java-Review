@@ -10,7 +10,7 @@ import java.net.URL;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 5/19/14
+ * @version 5/19/14
  */
 public class WebClient {
     public String getContent(URL url) {

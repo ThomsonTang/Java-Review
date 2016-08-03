@@ -6,7 +6,7 @@ import java.io.File;
  * Search a file with a determined name in a folder and in all its subfolders.
  *
  * @author ThomsonTang
- * @date 6/20/14
+ * @version 6/20/14
  */
 public class FileSearch implements Runnable {
     private String initPath;

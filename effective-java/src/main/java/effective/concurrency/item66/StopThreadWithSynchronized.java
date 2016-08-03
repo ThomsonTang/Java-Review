@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * In other words, the synchronization on these methods is used solely for its communication effects, not for mutual exclusion.
  *
  * @author ThomsonTang
- * @date 7/16/14
+ * @version 7/16/14
  */
 public class StopThreadWithSynchronized {
 	public static boolean stopRequested;

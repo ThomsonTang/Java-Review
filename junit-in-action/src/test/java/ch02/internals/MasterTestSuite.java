@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 5/31/13
+ * @version 5/31/13
  */
 @RunWith(value = Suite.class)
 @Suite.SuiteClasses(value = {TestSuiteA.class, TestSuiteB.class})

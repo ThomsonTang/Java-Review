@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 6/25/13
+ * @version 6/25/13
  */
 public class CounterPoint extends Point {
 

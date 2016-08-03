@@ -14,7 +14,7 @@ import java.math.BigInteger;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/5/13
+ * @version 8/5/13
  */
 @ThreadSafe
 public class SynchronizedFactorizer {

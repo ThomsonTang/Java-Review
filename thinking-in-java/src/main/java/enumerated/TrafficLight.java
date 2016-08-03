@@ -7,7 +7,7 @@ import static enumerated.Signal.*;
  * enums in switch statements.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 
 //Define an enum type

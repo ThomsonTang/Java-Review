@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/12/13
+ * @version 9/12/13
  */
 public class PeriodTest {
     private Period period;

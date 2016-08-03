@@ -10,7 +10,7 @@ import java.util.Set;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/29/13
+ * @version 8/29/13
  */
 public class Herb {
     public enum Type {ANNUAL, PERENNIAL, BIENNIAL}

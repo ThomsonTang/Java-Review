@@ -8,7 +8,7 @@ import java.util.EmptyStackException;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/18/13
+ * @version 7/18/13
  */
 public class Stack {
     private Object[] elements;

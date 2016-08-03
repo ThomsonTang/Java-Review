@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 求数组的子数组之和的最大值
  *
  * @author ThomsonTang
- * @date 1/5/14
+ * @version 1/5/14
  */
 public class SubArrayMaxSum {
     public static int maxSum(int[] array) {

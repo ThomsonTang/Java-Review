@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 5/31/13
+ * @version 5/31/13
  */
 public class TestCaseA {
 

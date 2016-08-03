@@ -7,7 +7,7 @@ import java.util.ArrayList;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/13/13
+ * @version 8/13/13
  */
 public abstract class Pizza {
     String name;

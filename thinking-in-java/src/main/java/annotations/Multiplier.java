@@ -8,7 +8,7 @@ package annotations;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/4/13
+ * @version 9/4/13
  */
 @ExtractInterface("IMultiplier") // given the name of the interface to create.
 public class Multiplier {

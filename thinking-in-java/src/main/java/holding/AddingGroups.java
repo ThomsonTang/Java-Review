@@ -6,7 +6,7 @@ import java.util.*;
  * Adding groups of elements to Collection objects.
  *
  * @author ThomsonTang
- * @date 12/27/11
+ * @version 12/27/11
  */
 public class AddingGroups {
     public static void main(String[] args) {

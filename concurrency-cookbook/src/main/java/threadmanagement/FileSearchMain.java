@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * The main class to search a file.
  *
  * @author ThomsonTang
- * @date 6/24/14
+ * @version 6/24/14
  */
 public class FileSearchMain {
     public static void main(String[] args) {

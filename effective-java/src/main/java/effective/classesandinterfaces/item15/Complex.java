@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * Created with IntelliJ IDEA.
  *
  * @author Thomson Tang
- * @date 8/1/13
+ * @version 8/1/13
  */
 public class Complex {
     private final double re;

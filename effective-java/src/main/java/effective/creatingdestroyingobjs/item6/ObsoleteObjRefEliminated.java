@@ -7,7 +7,7 @@ import java.util.EmptyStackException;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/23/13
+ * @version 7/23/13
  */
 public class ObsoleteObjRefEliminated {
     private Object[] elements = new Object[5];

@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * 1. create 10 threads which use a class that implements Runnable interface.
- * 2. set the priority(max or min) and name for each thread.
+ * 1. create 10 threads which use a class that implements Runnable interface. 2. set the
+ * priority(max or min) and name for each thread.
  *
  * @author Thomson Tang
- * @date 11/11/13
+ * @version created: 11/11/13
  */
 public class CalculatorMain {
     public static void main(String[] args) throws IOException {

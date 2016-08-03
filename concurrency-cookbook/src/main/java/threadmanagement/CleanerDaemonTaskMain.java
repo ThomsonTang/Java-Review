@@ -7,7 +7,7 @@ import java.util.Deque;
  * Created with IntelliJ IDEA.
  *
  * @author ThomsonTang
- * @date 7/2/14
+ * @version 7/2/14
  */
 public class CleanerDaemonTaskMain {
     public static void main(String[] args) {

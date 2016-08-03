@@ -5,7 +5,7 @@ package enumerated.menu;
  * Subcategorization of enums within interfaces.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 public interface Food {
     enum Appetizer implements Food {

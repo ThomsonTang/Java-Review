@@ -9,7 +9,7 @@ import java.util.TreeSet;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/25/13
+ * @version 7/25/13
  */
 public class WordList {
 

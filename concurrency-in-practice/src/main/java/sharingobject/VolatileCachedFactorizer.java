@@ -9,7 +9,7 @@ import java.math.BigInteger;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/6/13
+ * @version 8/6/13
  */
 public class VolatileCachedFactorizer extends GenericServlet implements Servlet {
     private volatile OneValueCache cache = new OneValueCache(null, null);

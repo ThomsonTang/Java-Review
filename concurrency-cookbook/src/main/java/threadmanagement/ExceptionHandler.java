@@ -7,7 +7,7 @@ package threadmanagement;
  * socket, connections and so on.
  *
  * @author ThomsonTang
- * @date 7/2/14
+ * @version 7/2/14
  */
 public class ExceptionHandler implements Thread.UncaughtExceptionHandler {
     @Override

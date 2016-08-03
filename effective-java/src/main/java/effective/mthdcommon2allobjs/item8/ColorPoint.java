@@ -7,7 +7,7 @@ import java.awt.*;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 6/24/13
+ * @version 6/24/13
  */
 public class ColorPoint extends Point {
     private final Color color;

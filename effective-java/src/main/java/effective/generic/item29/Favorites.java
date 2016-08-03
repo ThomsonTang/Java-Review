@@ -8,7 +8,7 @@ import java.util.Map;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/21/13
+ * @version 8/21/13
  */
 public class Favorites {
     private Map<Class<?>, Object> favorites = new HashMap<Class<?>, Object>();

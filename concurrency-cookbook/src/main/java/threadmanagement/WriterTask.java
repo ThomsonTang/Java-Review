@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * A task which write an event and add the event in a deque.
  *
  * @author ThomsonTang
- * @date 7/2/14
+ * @version 7/2/14
  */
 public class WriterTask implements Runnable {
     private Deque<Event> deque;

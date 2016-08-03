@@ -11,7 +11,7 @@ package reusingclasses;
  * caution: Java language doesn't support delegation directly.
  *
  * @author Thomson Tang
- * @date 10/11/13
+ * @version 10/11/13
  */
 public class SpaceShipDelegation {
     private String name;

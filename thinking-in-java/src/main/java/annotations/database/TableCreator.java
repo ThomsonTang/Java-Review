@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/3/13
+ * @version 9/3/13
  */
 public class TableCreator {
     public static void main(String[] args) throws Exception{

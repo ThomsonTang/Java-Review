@@ -8,7 +8,7 @@ import java.util.EmptyStackException;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/16/13
+ * @version 8/16/13
  */
 public class Stack {
     private static final int DEFAULT_INITITAL_CAPACITY = 16;

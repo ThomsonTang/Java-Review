@@ -14,7 +14,7 @@ package threadmanagement;
  * and treat the unchecked exceptions throw in a Thread object to avoid the program ending.
  *
  * @author ThomsonTang
- * @date 7/7/14
+ * @version 7/7/14
  */
 public class UncontrolledExceptionTaskMain {
     public static void main(String[] args) {

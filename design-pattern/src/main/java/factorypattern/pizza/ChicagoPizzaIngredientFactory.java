@@ -5,7 +5,7 @@ package factorypattern.pizza;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/14/13
+ * @version 8/14/13
  */
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override

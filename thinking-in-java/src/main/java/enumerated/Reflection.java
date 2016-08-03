@@ -26,7 +26,7 @@ import static net.mindview.util.Print.printnb;
  * inherit from an {@code enum}.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 enum Explore {HERE, THERE}
 

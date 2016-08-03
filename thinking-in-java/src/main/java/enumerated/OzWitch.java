@@ -10,7 +10,7 @@ import static net.mindview.util.Print.*;
  * the compiler won't let you use it to create any new instances once the enum definition is complete.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 public enum OzWitch {
 

@@ -5,7 +5,7 @@ package observerpattern;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/26/13
+ * @version 7/26/13
  */
 public interface Observer {
     /**

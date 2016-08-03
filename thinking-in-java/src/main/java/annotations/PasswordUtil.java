@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/2/13
+ * @version 9/2/13
  */
 public class PasswordUtil {
 

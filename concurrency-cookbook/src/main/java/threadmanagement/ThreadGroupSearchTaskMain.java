@@ -3,17 +3,16 @@ package threadmanagement;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Group threads into a group
- * <p/>
- * This allows us to treat the threads of a group as a single unit and provides access to the Thread
- * objects that belong to a group to do an operation with them.
- * <p/>
- * Java provides the {@link ThreadGroup} class to work with groups of threads. A ThreadGroup object
- * can be formed by Thread objects and by another ThreadGroup object, generating a tree structure of
- * threads.
+ * Group threads into a group <p> This allows us to treat the threads of a group as a single unit
+ * and provides access to the Thread objects that belong to a group to do an operation with them.
+ * </p>
+ *
+ * <p> Java provides the {@link ThreadGroup} class to work with groups of threads. A ThreadGroup
+ * object can be formed by Thread objects and by another ThreadGroup object, generating a tree
+ * structure of threads. </p>
  *
  * @author ThomsonTang
- * @date 7/10/14
+ * @version 7/10/14
  * @see ThreadGroup
  */
 public class ThreadGroupSearchTaskMain {

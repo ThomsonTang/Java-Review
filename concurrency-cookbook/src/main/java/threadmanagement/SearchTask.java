@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * Created with IntelliJ IDEA.
  *
  * @author ThomsonTang
- * @date 7/10/14
+ * @version 7/10/14
  */
 public class SearchTask implements Runnable {
     private Result result;

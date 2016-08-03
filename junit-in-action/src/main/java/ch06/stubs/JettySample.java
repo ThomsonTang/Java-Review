@@ -9,7 +9,7 @@ import org.mortbay.jetty.servlet.Context;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 5/19/14
+ * @version 5/19/14
  */
 public class JettySample {
     public static void main(String[] args) throws Exception {

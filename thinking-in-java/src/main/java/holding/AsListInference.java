@@ -9,7 +9,7 @@ import java.util.List;
  * Arrays.asList() makes its best guess about type.
  *
  * @author ThomsonTang
- * @date 12/27/11
+ * @version 12/27/11
  */
 class Snow{}
 class Powder extends Snow {}

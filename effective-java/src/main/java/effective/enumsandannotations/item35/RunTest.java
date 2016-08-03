@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/11/13
+ * @version 9/11/13
  */
 public class RunTest {
 //    public static void main(String[] args) throws Exception{

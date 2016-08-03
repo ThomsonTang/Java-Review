@@ -11,7 +11,7 @@ import java.util.HashSet;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/5/13
+ * @version 9/5/13
  */
 public class CollectionDataGeneration {
     public static void main(String[] args) {

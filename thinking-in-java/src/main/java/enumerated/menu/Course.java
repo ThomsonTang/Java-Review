@@ -6,7 +6,7 @@ import net.mindview.util.Enums;
  * Creating a surrounding {@code enum} with one instance for each {@code enum}.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 public enum Course {
     APPETIZER(Food.Appetizer.class),

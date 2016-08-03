@@ -7,7 +7,7 @@ import java.util.Date;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 7/2/14
+ * @version 7/2/14
  */
 public class Event {
     private Date date;

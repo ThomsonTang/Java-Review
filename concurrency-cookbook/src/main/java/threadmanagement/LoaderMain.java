@@ -6,7 +6,7 @@ import java.util.Date;
  * Waiting for the finalization of a thread.
  *
  * @author ThomsonTang
- * @date 7/1/14
+ * @version 7/1/14
  */
 public class LoaderMain {
     public static void main(String[] args) {

@@ -5,7 +5,7 @@ package sharingobject;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/6/13
+ * @version 8/6/13
  */
 public class NoVisibility {
     private static boolean ready;

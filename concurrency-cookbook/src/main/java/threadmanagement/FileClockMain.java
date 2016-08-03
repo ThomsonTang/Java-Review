@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * Use the <tt>sleep()</tt> method to write the actual date every second.
  *
  * @author ThomsonTang
- * @date 6/26/14
+ * @version 6/26/14
  */
 public class FileClockMain {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ import net.mindview.util.Enums;
  * Created with IntelliJ IDEA.
  *
  * @author Thomson Tang
- * @date 6/5/13
+ * @version 6/5/13
  */
 enum SecurityCategory {
     STOCK(Security.Stock.class),

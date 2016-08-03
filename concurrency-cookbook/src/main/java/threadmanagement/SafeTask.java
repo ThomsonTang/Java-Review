@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * initial value.</p>
  *
  * @author ThomsonTang
- * @date 7/8/14
+ * @version 7/8/14
  */
 public class SafeTask implements Runnable {
     private static ThreadLocal<Date> startDate = new ThreadLocal<Date>() {

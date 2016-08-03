@@ -12,7 +12,7 @@ import java.net.URL;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 6/6/14
+ * @version 6/6/14
  */
 public class StubHttpUrlConnection extends HttpURLConnection {
     private boolean isInput = true;

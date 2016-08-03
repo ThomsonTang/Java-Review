@@ -25,7 +25,7 @@ import static org.junit.Assert.assertNull;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 6/5/14
+ * @version 6/5/14
  */
 public class TestWebClient {
     @BeforeClass

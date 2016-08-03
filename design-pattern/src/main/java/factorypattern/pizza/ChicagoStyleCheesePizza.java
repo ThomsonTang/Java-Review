@@ -5,7 +5,7 @@ package factorypattern.pizza;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/13/13
+ * @version 8/13/13
  */
 public class ChicagoStyleCheesePizza extends Pizza {
     public ChicagoStyleCheesePizza() {

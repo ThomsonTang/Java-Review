@@ -9,7 +9,7 @@ import java.io.InputStream;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/2/13
+ * @version 8/2/13
  */
 public class LowerCaseInputStream extends FilterInputStream {
 

@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/5/13
+ * @version 9/5/13
  */
 class Government implements Generator<String> {
 	String[] foundation = ("strange women lying in pounds distributing swords is no basis for a system of government").split(" ");

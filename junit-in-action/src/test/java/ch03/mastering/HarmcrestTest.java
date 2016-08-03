@@ -17,7 +17,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/10/13
+ * @version 9/10/13
  */
 public class HarmcrestTest {
     private List<String> values;

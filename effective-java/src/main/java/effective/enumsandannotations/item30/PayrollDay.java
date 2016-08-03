@@ -8,7 +8,7 @@ package effective.enumsandannotations.item30;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/23/13
+ * @version 8/23/13
  */
 public enum PayrollDay {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;

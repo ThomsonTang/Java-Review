@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/1/13
+ * @version 8/1/13
  */
 public class OwnerInvocationHandler implements InvocationHandler {
     PersonBean person;

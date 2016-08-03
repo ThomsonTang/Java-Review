@@ -9,7 +9,7 @@ import java.util.Collection;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/30/13
+ * @version 8/30/13
  */
 public enum ExtendedOperation implements Operation {
     EXP("^") {

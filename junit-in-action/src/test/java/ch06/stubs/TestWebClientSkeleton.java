@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 5/22/14
+ * @version 5/22/14
  */
 public class TestWebClientSkeleton {
 

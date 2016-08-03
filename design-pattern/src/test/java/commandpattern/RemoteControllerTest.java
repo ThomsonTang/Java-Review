@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/16/13
+ * @version 9/16/13
  */
 public class RemoteControllerTest {
     private SimpleRemoteController simpleRemoteController;

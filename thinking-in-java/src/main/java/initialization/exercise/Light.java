@@ -5,7 +5,7 @@ package initialization.exercise;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 8/8/14
+ * @version 8/8/14
  */
 public class Light {
 	private boolean on;

@@ -19,7 +19,7 @@ import java.util.Set;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/4/13
+ * @version 9/4/13
  */
 public class InterfaceExtractorProcessor implements Processor{
     @Override public Set<String> getSupportedOptions() {

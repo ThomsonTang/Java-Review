@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicReference;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/5/13
+ * @version 8/5/13
  */
 public class UnsafeCachingFactorizer implements Servlet {
     public final AtomicReference<BigInteger> lastNumber = new AtomicReference<BigInteger>();

@@ -10,7 +10,7 @@ import java.util.*;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/16/13
+ * @version 8/16/13
  */
 public class GenericStack<E> {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;

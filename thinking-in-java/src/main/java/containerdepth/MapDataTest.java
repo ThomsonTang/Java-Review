@@ -9,7 +9,7 @@ import java.util.Iterator;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/5/13
+ * @version 9/5/13
  */
 class Letters implements Generator<Pair<Integer, String>>, Iterable<Integer> {
 

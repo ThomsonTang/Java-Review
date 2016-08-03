@@ -4,7 +4,7 @@ package enumerated.menu;
  * Created with IntelliJ IDEA.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 public class Meal {
     public static void main(String[] args) {

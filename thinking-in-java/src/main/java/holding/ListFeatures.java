@@ -11,7 +11,7 @@ import static net.mindview.util.Print.print;
  * Show the features of List collections.
  *
  * @author ThomsonTang
- * @date 12/27/13
+ * @version 12/27/13
  */
 public class ListFeatures {
     public static void main(String[] args) {

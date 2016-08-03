@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/6/13
+ * @version 8/6/13
  */
 public class ConnectionDispener {
     static String DB_URL = "jdbc:mysql://localhost/database";

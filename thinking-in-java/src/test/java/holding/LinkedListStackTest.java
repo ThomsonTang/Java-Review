@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
  * Test case for LinkedListStack.
  *
  * @author ThomsonTang
- * @date 12/28/13
+ * @version 12/28/13
  */
 public class LinkedListStackTest {
     private LinkedListStack<String> stack;

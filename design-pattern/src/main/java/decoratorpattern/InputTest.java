@@ -7,7 +7,7 @@ import java.io.*;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/2/13
+ * @version 8/2/13
  */
 public class InputTest {
     public static void main(String[] args) {

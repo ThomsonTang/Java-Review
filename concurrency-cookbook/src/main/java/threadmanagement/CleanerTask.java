@@ -7,7 +7,7 @@ import java.util.Deque;
  * A daemon thread to clean the event.
  *
  * @author ThomsonTang
- * @date 7/2/14
+ * @version 7/2/14
  */
 public class CleanerTask extends Thread {
 

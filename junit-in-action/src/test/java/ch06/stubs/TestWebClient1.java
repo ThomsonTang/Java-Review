@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 6/6/14
+ * @version 6/6/14
  */
 public class TestWebClient1 {
     @BeforeClass

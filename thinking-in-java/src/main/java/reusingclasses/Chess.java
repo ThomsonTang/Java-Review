@@ -9,7 +9,7 @@ import static net.mindview.util.Print.print;
  * list.
  *
  * @author Thomson Tang
- * @date 10/11/13
+ * @version 10/11/13
  */
 class Game {
     Game(int i) {

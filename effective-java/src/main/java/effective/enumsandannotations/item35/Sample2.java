@@ -5,7 +5,7 @@ package effective.enumsandannotations.item35;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 9/11/13
+ * @version 9/11/13
  */
 public class Sample2 {
     @ExceptionTest(value = ArithmeticException.class)

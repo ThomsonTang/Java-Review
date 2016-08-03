@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
  * The StopThreadWithSynchronized class give the solution for it.
  *
  * @author ThomsonTang
- * @date 7/16/14
+ * @version 7/16/14
  */
 public class StopThread {
 	private static boolean stopRequested;

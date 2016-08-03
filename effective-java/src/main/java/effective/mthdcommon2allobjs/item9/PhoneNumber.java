@@ -8,7 +8,7 @@ import java.util.Map;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 7/5/13
+ * @version 7/5/13
  */
 public final class PhoneNumber implements Comparable<PhoneNumber> {
     private final short areaCode;

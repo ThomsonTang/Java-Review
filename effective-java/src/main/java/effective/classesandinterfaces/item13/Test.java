@@ -5,7 +5,7 @@ package effective.classesandinterfaces.item13;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 8/1/14
+ * @version 8/1/14
  */
 public class Test {
 }

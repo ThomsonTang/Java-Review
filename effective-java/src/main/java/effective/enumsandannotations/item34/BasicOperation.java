@@ -5,7 +5,7 @@ package effective.enumsandannotations.item34;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/30/13
+ * @version 8/30/13
  */
 public enum BasicOperation implements Operation {
     PLUS("+") {

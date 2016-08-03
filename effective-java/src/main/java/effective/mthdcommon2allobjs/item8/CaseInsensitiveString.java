@@ -7,7 +7,7 @@ package effective.mthdcommon2allobjs.item8;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 6/19/13
+ * @version 6/19/13
  */
 public final class CaseInsensitiveString {
     private final String s;

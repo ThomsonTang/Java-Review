@@ -8,7 +8,7 @@ import java.util.Random;
  * Implements, not inherits.
  *
  * @author Thomson Tang
- * @date 6/3/13
+ * @version 6/3/13
  */
 enum CartoonCharacter implements Generator<CartoonCharacter> {
     SLAPPY, SPANKY, PUNCHY, BOB;

@@ -5,7 +5,7 @@ package effective.classesandinterfaces.item20;
  *
  * @author Thomson Tang
  * @version 1.0-SNAPSHOT
- * @date 8/12/13
+ * @version 8/12/13
  */
 public class Circle extends Figure2 {
     final double radius;

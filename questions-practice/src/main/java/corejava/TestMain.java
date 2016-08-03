@@ -5,7 +5,7 @@ package corejava;
  *
  * @author ThomsonTang
  * @version ${VERSION}
- * @date 2/13/14
+ * @version 2/13/14
  */
 public class TestMain {
 

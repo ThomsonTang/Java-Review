@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * Synchronized access to share mutable data.
  *
  * @author ThomsonTang
- * @date 7/17/14
+ * @version 7/17/14
  */
 public class StopThreadWithVolatile {
 	private static volatile boolean stopRequested;

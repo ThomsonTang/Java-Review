@@ -6,7 +6,7 @@ import java.util.LinkedList;
  * Making a stack from LinkedList.
  *
  * @author ThomsonTang
- * @date 12/28/13
+ * @version 12/28/13
  */
 public class LinkedListStack<T> {
     private LinkedList<T> storage = new LinkedList<>();
