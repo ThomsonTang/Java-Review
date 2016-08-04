@@ -3,13 +3,14 @@ package threadmanagement;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by Intellij idea.
+ * Define a task will be used in thread factory.
  *
  * @author Thomson Tang
  */
 public class TaskForFactory implements Runnable {
 
-    @Override public void run() {
+    @Override
+    public void run() {
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {

@@ -7,13 +7,14 @@ import java.util.List;
 import java.util.concurrent.ThreadFactory;
 
 /**
- * Define a thread factory will be used to create threads.
+ * <h2>Define a thread factory will be used to create threads</h2>
  *
  * <p> Java provides an interface, the {@link java.util.concurrent.ThreadFactory} interface to
  * implement a {@code Thread} object factory. Some advanced utilities of the Java concurrency API
  * use thread factories to create threads. </p>
  *
  * @author Thomson Tang
+ * @see java.util.concurrent.ThreadFactory
  */
 public class MyThreadFactory implements ThreadFactory {
     private int counter;
