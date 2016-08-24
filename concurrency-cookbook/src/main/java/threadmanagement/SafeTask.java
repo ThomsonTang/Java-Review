@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * The safe task which use thread-local variable to save the <i>startDate </i> attribute.
  *
- * <p> Thread-local variables store a value of an attribute for each {@link Thread} that uses one fo
+ * <p> Thread-local variables store a value of an attribute for each {@link Thread} that uses one of
  * these variables. You can read the value using the <code>get()</code> method and change the value
  * using the <code>set()</code> method. The first time you access the value of a thread-local
  * variable, if it has no value for the Thread object that it is calling, the thread-local variable
