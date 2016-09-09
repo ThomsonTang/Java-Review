@@ -2,15 +2,32 @@ package threadsafety;
 
 import net.jcip.annotations.ThreadSafe;
 
-import javax.servlet.*;
 import java.io.IOException;
 import java.math.BigInteger;
 
+import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
 /**
- * Created with IntelliJ IDEA.
+ * A Stateless Servlet.
+ *
+ * This is a simple factorization servlet. It unpacks the number to be factored from the servlet request, factors it,
+ * and packages the results into the servlet response.
+ *
+ * {@link StatelessFactorizer} is, like most servlet, stateless: it has no fields and references no fields from other
+ * classes. The transient state for a particular computation exists solely in local variables that are stored on the
+ * thread's stack and are accessible only to the executing thread.
+ *
+ * One thread accessing a {@link StatelessFactorizer} cannot influence the result of another thread accessing the
+ * same {@link StatelessFactorizer}; because the two threads do not share state, it is as if they were accessing
+ * different instances.
+ *
+ * <strong>Stateless objects are always thread-safe.</strong>
  *
  * @author Thomson Tang
- * @version 1.0-SNAPSHOT
  * @version 8/5/13
  */
 @ThreadSafe
@@ -26,7 +43,8 @@ public class StatelessFactorizer implements Servlet {
     }
 
     @Override
-    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException,
+            IOException {
         BigInteger i = exactFromRequest(servletRequest);
         BigInteger[] factors = factor(i);
         encodeIntoResponse(servletResponse, factors);
