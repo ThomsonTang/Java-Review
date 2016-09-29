@@ -30,6 +30,29 @@ It is only when servlets want to remember things from one request to another tha
 
 ## 2.2 Atomicity
 
+The possibility of incorrect results in the presence of unlucky timing is so important in concurrent programming that it has a name: **a race condition**.
+
+### Race Conditions
+
+The most common type of race condition is **check-then-act**, where a potentially stale observation is used to make a decision on what to do next.
+
+The common idiom that uses **check-then-act** is **lazy initialization**.
+
+**Read-modify-write** operations, like incrementing a counter, define a transformation of an object's state in terms of its previously state.
+
+Like most concurrency errors, race conditions don't always result in failure: some unlucky timing is also required. But race conditions can cause serious problems.
+
+### Compound Actions
+
+> Operation A and B are atomic with respect to each other if, from the perspective of a thread executing A, when another thread execute B, either all of B has executed or none of it has. An *atomic operation* is one that is atomic with respect to all operations, including itself, that operate on the some state.
+
+We refer collectively to **check-then-act** and **read-modify-write** sequences as **compound actions**: sequences of operations that must be executed atomically in order to remain thread-safe.
+
+> Where practical, use existing thread-safe objects, like AtomicLong, to manage your class's state. It is simpler to reason about the possible states and sate transitions for existing thread-safe objects than it is for arbitrary state variables, and this makes it easier for maintain and verify thread safety.
+
+## Locking
+
+The definition of thread safety requires that invariants be preserved regardless of timing or interleaving of operations in multiple threads.
 
 
 

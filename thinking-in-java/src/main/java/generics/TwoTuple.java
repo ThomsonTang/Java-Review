@@ -1,7 +1,7 @@
 package generics;
 
 /**
- * Created by Intellij idea.
+ * 二元组，可以用来在方法中返回多个元素
  *
  * @author Thomson Tang
  */

@@ -1,7 +1,7 @@
 package generics;
 
 /**
- * Created by Intellij idea.
+ * 三元组
  *
  * @author Thomson Tang
  */
