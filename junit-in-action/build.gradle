@@ -1,5 +1,0 @@
-apply plugin: 'idea'
-
-dependencies {
-    compile "org.mortbay.jetty:jetty:${jettyVersion}"
-}

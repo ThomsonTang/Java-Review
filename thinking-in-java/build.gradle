@@ -1,5 +1,0 @@
-dependencies {
-    compile "javassist:javassist:${javassistVersion}"
-    compile "javax:javaee-api:${javaeeApiVersion}"
-    runtime "mysql:mysql-connector-java:${mysqlConnectorVersion}"
-}
