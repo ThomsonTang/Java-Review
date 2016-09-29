@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java-Review.iml" filepath="$PROJECT_DIR$/.idea/modules/Java-Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java-Review_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Java-Review_main.iml" group="Java-Review" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java-Review_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Java-Review_test.iml" group="Java-Review" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurrency-cookbook/concurrency-cookbook_main.iml" filepath="$PROJECT_DIR$/.idea/modules/concurrency-cookbook/concurrency-cookbook_main.iml" group="concurrency-cookbook" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurrency-cookbook/concurrency-cookbook_test.iml" filepath="$PROJECT_DIR$/.idea/modules/concurrency-cookbook/concurrency-cookbook_test.iml" group="concurrency-cookbook" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurrency-in-practice/concurrency-in-practice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/concurrency-in-practice/concurrency-in-practice_main.iml" group="concurrency-in-practice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurrency-in-practice/concurrency-in-practice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/concurrency-in-practice/concurrency-in-practice_test.iml" group="concurrency-in-practice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/effective-java/effective-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/effective-java/effective-java_main.iml" group="effective-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/effective-java/effective-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/effective-java/effective-java_test.iml" group="effective-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junit-in-action/junit-in-action_main.iml" filepath="$PROJECT_DIR$/.idea/modules/junit-in-action/junit-in-action_main.iml" group="junit-in-action" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junit-in-action/junit-in-action_test.iml" filepath="$PROJECT_DIR$/.idea/modules/junit-in-action/junit-in-action_test.iml" group="junit-in-action" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/questions-practice/questions-practice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/questions-practice/questions-practice_main.iml" group="questions-practice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/questions-practice/questions-practice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/questions-practice/questions-practice_test.iml" group="questions-practice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thinking-in-java/thinking-in-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/thinking-in-java/thinking-in-java_main.iml" group="thinking-in-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thinking-in-java/thinking-in-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/thinking-in-java/thinking-in-java_test.iml" group="thinking-in-java" />
+    </modules>
+  </component>
+</project>

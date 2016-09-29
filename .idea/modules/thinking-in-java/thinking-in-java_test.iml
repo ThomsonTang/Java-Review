@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":thinking-in-java:test" external.linked.project.path="$MODULE_DIR$/../../../thinking-in-java" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.thomson.java.review" external.system.module.type="sourceSet" external.system.module.version="1.0.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../../thinking-in-java/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../thinking-in-java/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../thinking-in-java/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../thinking-in-java/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="thinking-in-java_main" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.1.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-all:2.4.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:12.0" level="project" />
+    <orderEntry type="library" name="Gradle: javassist:javassist:3.8.0.GA" level="project" />
+    <orderEntry type="library" name="Gradle: javax:javaee-api:7.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.1.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: mysql:mysql-connector-java:5.1.33" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.mail:javax.mail:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="thinking-in-java_main" />
+</module>

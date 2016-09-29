@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jcip-annotations:jcip-annotations:1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/concurrency-in-practice/lib/jcip-annotations.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
