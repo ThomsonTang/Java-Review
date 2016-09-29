@@ -1,8 +1,0 @@
-rootProject.name = "Java-Review"
-
-include 'thinking-in-java'
-include 'effective-java'
-include 'concurrency-in-practice'
-include 'concurrency-cookbook'
-include 'junit-in-action'
-include 'questions-practice'
