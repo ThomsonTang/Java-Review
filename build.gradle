@@ -1,5 +1,6 @@
 allprojects {
     apply plugin: 'java'
+    apply plugin: 'groovy'
 
     group 'com.thomson.java.review'
     version '1.0.0-SNAPSHOT'
