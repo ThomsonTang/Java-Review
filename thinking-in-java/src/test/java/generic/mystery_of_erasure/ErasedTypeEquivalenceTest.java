@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
 /**
- * 类说明
+ * 泛型类{@code ArrayList<String>}和{@code ArrayList<Integer>}的实际类型是相同的，都是{@code ArrayList}
  *
  * @author Thomson Tang
  * @version Created ：2016-30/09/2016-08:40
