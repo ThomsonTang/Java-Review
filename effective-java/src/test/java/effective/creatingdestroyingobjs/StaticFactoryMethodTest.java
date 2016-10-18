@@ -1,9 +1,12 @@
 package effective.creatingdestroyingobjs;
 
 import effective.creatingdestroyingobjs.item1.StaticFactoryMethod;
-import junit.framework.Assert;
+
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,12 +27,12 @@ public class StaticFactoryMethodTest {
 
     @Test
     public void testEqualsInstance() {
-        Assert.assertEquals(staticFactoryMethod1, staticFactoryMethod2);
+        assertEquals(staticFactoryMethod1, staticFactoryMethod2);
     }
 
     @Test
     public void testSameInstance() {
-        Assert.assertNotSame(staticFactoryMethod1, staticFactoryMethod2);
+        assertNotSame(staticFactoryMethod1, staticFactoryMethod2);
     }
 
 
