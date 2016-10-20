@@ -53,3 +53,22 @@ define acquire_the_semaphore() {
   }
 }
 ```
+
+## Three steps to follow
+
+when you use a **semaphore** to implement a **critical section**, you should follow three steps:
+
+- `semaphore.acquire()`
+- do the necessary operations withe the shared resources
+- `semaphore.release()`
+
+## Fairness in semaphore
+
+- **non-fair mode**: in this model, when the synchronization resource is released, one of the waiting threads is selected to get this resource, but it's selected without any criteria.
+- **fair mode**: the fair mode change the behavior and forces to select the thread that has been waiting for more time.
+
+Creating a fair mode semaphore:
+
+```java
+Semaphore semaphore = new Semaphore(1, true);
+```

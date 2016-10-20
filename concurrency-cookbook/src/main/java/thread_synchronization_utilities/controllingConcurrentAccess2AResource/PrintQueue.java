@@ -3,7 +3,8 @@ package thread_synchronization_utilities.controllingConcurrentAccess2AResource;
 import java.util.concurrent.Semaphore;
 
 /**
- * 类说明
+ * In the constructor of this class, we pass the value 1 as the parameter of the constructor of {@link Semaphore}.
+ * This is creating a <strong>binary semaphore</strong>.
  *
  * @author Thomson Tang
  * @version Created ：2016-19/10/2016-14:54
