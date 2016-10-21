@@ -1,6 +1,7 @@
 # Table of Contents
 
-[Controlling concurrent access to a resource](#Controlling concurrent access to a resource)
+- [Controlling concurrent access to a resource](#controlling-concurrent-access-to-a-resource)
+  - [Three steps to follow](#three-steps-to-follow)
 
 
 # Introduction
