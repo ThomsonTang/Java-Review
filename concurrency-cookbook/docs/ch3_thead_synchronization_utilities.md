@@ -21,7 +21,7 @@
 - **Phaser**: The `java.util.concurrent.Phaser` class is another mechanism provided by the Java language that controls the execution of concurrent tasks divided in phases. All the threads must finish one phase before they can continue with the next one. This is a new feature in Java 7 API.
 - **Exchanger**: The `java.util.concurrent.Exchanger` class is another mechanism provided by the java language that provides a point of data interchange between two threads.
 
-# Controlling concurrent access to a resource
+# Controlling concurrent access to a resource ##
 
 > a **semaphore** is a counter that protects the access to one or more shared resources.
 
