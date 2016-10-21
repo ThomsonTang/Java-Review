@@ -1,7 +1,7 @@
 # Table of Contents
 
 - [Controlling concurrent access to a resource](#controlling-concurrent-access-to-a-resource)
-  - [Three steps to follow](#three-steps-to-follow)
+- [Controlling concurrent access to multiple copies of a resource](#controlling-concurrent-access-to-multiple-copies-of-a-resource)
 
 
 # Introduction
@@ -25,6 +25,7 @@
 # Controlling concurrent access to a resource ##
 
 > a **semaphore** is a counter that protects the access to one or more shared resources.
+> **binary semaphores**: these kinds of semaphores are used to protect the access to *one shared resource*, or a critical section that can only be executed *by one thread in a time*.
 
 Semaphore Use Case:
 
@@ -73,3 +74,11 @@ Creating a fair mode semaphore:
 ```java
 Semaphore semaphore = new Semaphore(1, true);
 ```
+
+# Controlling concurrent access to multiple copies of a resource
+
+> Semaphores can also be used when you need to protect various copies of a resource, or when you have a critical section that can be executed by more than one thread at the same time.
+
+## How it works
+
+In this example, the `Semaphore` object is created using `3` as the parameter of the constructor. So the first three threads that call the `acquire()` method will get the access of the critical section, while the rest will be blocked. When a thread finished the critical section and releases the semaphore, another thread will acquire it.
