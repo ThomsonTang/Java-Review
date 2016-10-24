@@ -2,6 +2,7 @@
 
 - [Controlling concurrent access to a resource](#controlling-concurrent-access-to-a-resource)
 - [Controlling concurrent access to multiple copies of a resource](#controlling-concurrent-access-to-multiple-copies-of-a-resource)
+- [Waiting for multiple concurrent events](#waiting-for-multiple-concurrent-events)
 
 
 # Introduction
@@ -82,3 +83,24 @@ Semaphore semaphore = new Semaphore(1, true);
 ## How it works
 
 In this example, the `Semaphore` object is created using `3` as the parameter of the constructor. So the first three threads that call the `acquire()` method will get the access of the critical section, while the rest will be blocked. When a thread finished the critical section and releases the semaphore, another thread will acquire it.
+
+# Waiting for multiple concurrent events
+
+The Java concurrency API provides a class that allows one or more threads to wait until a set of operations are made. It's the `CountDownLatch` class. This class is initialized with an integer number, which is the number of operations the threads are going to wait for. When a thread wants to wait for the execution of these operations, it uses the `await()` method. This method puts the thread to sleep until the operations are completed. When one of these operations finishes, it uses the `countDown()` method to decrement the internal counter of the `CountDownLatch` class. When the counter arrives to `0`, the class wakes up all the threads that were sleeping in the `await()` method.
+
+## Basic elements
+
+The `CountDownLatch` class has three basic elements:
+
+- The initialization value that determines how many events the `CountDownLatch` class waits for.
+- The `await()` method, called by the threads that wait for the finalization of all the events.
+- The `countDown()` method, called by the events when they finish their execution.
+
+## Pay more attention
+
+There's no way to re-initialize the internal counter of the `CountDownLatch` object or to modify its value. Once the counter is initialized, the only method you can use to modify its value is the `countDown()` method. When the counter arrives to `0`, all the calls to the `await()` method return immediately and subsequent calls to the `countDown()` method have no effect.
+
+There are some differences with respect to other synchronization methods, which are as follows:
+
+- The `CountDownLatch` mechanism is not used to protect a shared resource or a critical section. It is used to synchronize one or more threads with the execution of various tasks.
+- It only admits one use. As we explained earlier, once the counter of `CountDownLatch` arrives to '0', all the calls to its methods have no effect. You have to create a new object if you want to do the same synchronization again.
