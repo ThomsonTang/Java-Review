@@ -32,7 +32,7 @@ public class CommandCallableTask {
 
     public Map<String, String> runTask(List<String> ips) throws ExecutionException, InterruptedException {
         Map<String, String> map = Maps.newConcurrentMap();
-        for (String ip : ips) {
+        for (final String ip : ips) {
             Future<Map<String, String>> future = executor.submit(new Callable<Map<String, String>>() {
                 @Override
                 public Map<String, String> call() throws Exception {
