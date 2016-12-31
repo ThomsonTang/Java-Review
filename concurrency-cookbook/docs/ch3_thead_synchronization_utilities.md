@@ -62,7 +62,7 @@ define acquire_the_semaphore() {
 when you use a **semaphore** to implement a **critical section**, you should follow three steps:
 
 - `semaphore.acquire()`
-- do the necessary operations withe the shared resources
+- do the necessary operations with the shared resources
 - `semaphore.release()`
 
 ## Fairness in semaphore
