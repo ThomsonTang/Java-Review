@@ -3,7 +3,7 @@ package thread_synchronization_utilities.controllingConcurrentAccess2AResource;
 import java.util.concurrent.Semaphore;
 
 /**
- * The scene class to test.
+* The scene class to test.
  *
  * How it works:
  *
