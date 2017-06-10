@@ -40,6 +40,7 @@ public class WorkThread {
         };
 
         public void init() {
+            workerThread.setName("worker");
             workerThread.start();
         }
 
