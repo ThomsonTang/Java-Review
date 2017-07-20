@@ -66,6 +66,7 @@ public class ObservableSet<E> extends ForwardingSet<E> {
             @Override
             public void added(ObservableSet<Integer> set, Integer element) {
                 System.out.println("element = [" + element + "]");
+                if (element == 23) set.removeObserver(this);
             }
         });
 
