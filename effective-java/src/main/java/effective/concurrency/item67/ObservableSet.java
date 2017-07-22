@@ -2,42 +2,47 @@ package effective.concurrency.item67;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import effective.classesandinterfaces.item16.ForwardingSet;
 
 /**
- * 类说明
+ * This class implements an <strong>observable</strong> set wrapper. It allows clients to subscribe to notification When
+ * elements are added to the set. This is the Observer pattern. For brevity's sake, the class does not provide
+ * notifications when elements are removed from the set, but it would be a simple matter to provide them. This class is
+ * implemented atop the reusable {@link effective.classesandinterfaces.item16.ForwardingSet} from the Item 16.
  *
  * @author Thomson Tang
  * @version Created: 19/07/2017.
  */
 public class ObservableSet<E> extends ForwardingSet<E> {
+    private final List<SetObserver<E>> observers = new ArrayList<>();
+
+    // Broken - invokes alien method from synchronized block!
+    private void notifyElementAdded(E element) {
+        synchronized (observers) {
+            for (SetObserver<E> observer : observers) {
+                observer.added(this, element);
+            }
+        }
+    }
+
     public ObservableSet(Set<E> set) {
         super(set);
     }
 
-    private final List<SetObserver<E>> observers = new ArrayList<>();
-
+    // Observers subscribe to notifications
     public void addObserver(SetObserver<E> observer) {
         synchronized (observers) {
             observers.add(observer);
         }
     }
 
+    // Observers unsubscribe to notifications
     public boolean removeObserver(SetObserver<E> observer) {
         synchronized (observers) {
             return observers.remove(observer);
-        }
-    }
-
-    private void notifyElementAdded(E element) {
-        synchronized (observers) {
-            for (SetObserver<E> observer : observers) {
-                observer.added(this, element);
-            }
         }
     }
 
@@ -57,21 +62,5 @@ public class ObservableSet<E> extends ForwardingSet<E> {
             result |= add(element); // calls notifyElementAdded
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        ObservableSet<Integer> set = new ObservableSet<>(new HashSet<>());
-
-        set.addObserver(new SetObserver<Integer>() {
-            @Override
-            public void added(ObservableSet<Integer> set, Integer element) {
-                System.out.println("element = [" + element + "]");
-                if (element == 23) set.removeObserver(this);
-            }
-        });
-
-        for (int i = 0; i < 100; i++) {
-            set.add(i);
-        }
     }
 }

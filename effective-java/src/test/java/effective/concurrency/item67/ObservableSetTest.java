@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 类说明
+ * This is the test class for the {@link ObservableSet}.
  *
  * @author Thomson Tang
  * @version Created: 20/07/2017.
@@ -22,6 +22,7 @@ public class ObservableSetTest {
         observableSet = new ObservableSet<>(new HashSet<>());
     }
 
+    // Print the number from 0 through 99.
     @Test
     public void testAdded() {
         observableSet.addObserver((set, element) -> System.out.println("element = [" + element + "]"));
@@ -30,6 +31,8 @@ public class ObservableSetTest {
         }
     }
 
+    // Suppose we replace the addObserver call with one that passes an observer that prints the integer value that was
+    // added to the set and removes itself if the value is 23.
     @Test
     public void testRemoveSelfWhen23() {
         observableSet.addObserver(new SetObserver<Integer>() {
@@ -46,6 +49,7 @@ public class ObservableSetTest {
         }
     }
 
+    // Observer that uses a background thread needlessly
     @Test
     public void testRemoveUsingBackgroundThread() {
         observableSet.addObserver(new SetObserver<Integer>() {
