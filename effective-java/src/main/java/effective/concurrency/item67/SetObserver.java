@@ -9,5 +9,10 @@ package effective.concurrency.item67;
  */
 public interface SetObserver<E> {
     //Invoked when an element is added to the observable set
-    void added(ObservableSet<E> set, E element);
+    default void added(ObservableSet<E> set, E element) {
+    }
+
+    default void added(BetterObservableSet<E> set, E element) {
+        System.out.println("this is a default method.");
+    }
 }

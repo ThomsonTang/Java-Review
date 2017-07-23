@@ -19,12 +19,28 @@ import effective.classesandinterfaces.item16.ForwardingSet;
 public class ObservableSet<E> extends ForwardingSet<E> {
     private final List<SetObserver<E>> observers = new ArrayList<>();
 
-    // Broken - invokes alien method from synchronized block!
-    private void notifyElementAdded(E element) {
+    // Broken - invokes alien method from synchronized block! It will cause an exception or deadlock.
+    private void notifyElementAddedUnsafely(E element) {
         synchronized (observers) {
             for (SetObserver<E> observer : observers) {
                 observer.added(this, element);
             }
+        }
+    }
+
+    /**
+     * Alien method moved outside of synchronization block - open calls
+     *
+     * Luckily, it is usually not too hard to fix this sort of problem  by moving alien method invocations out of
+     * synchronized blocks.
+     */
+    private void notifyElementAddedSafely(E element) {
+        List<SetObserver<E>> snapshot = null;
+        synchronized (observers) {
+            snapshot = new ArrayList<>(observers);
+        }
+        for (SetObserver<E> observer : snapshot) {
+            observer.added(this, element);
         }
     }
 
@@ -50,7 +66,8 @@ public class ObservableSet<E> extends ForwardingSet<E> {
     public boolean add(E element) {
         boolean added = super.add(element);
         if (added) {
-            notifyElementAdded(element);
+            notifyElementAddedUnsafely(element); // the test case will pass while invoking this method
+//            notifyElementAddedSafely(element);
         }
         return added;
     }
