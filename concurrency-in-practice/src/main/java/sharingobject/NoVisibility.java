@@ -4,7 +4,6 @@ package sharingobject;
  * Sharing Variables without Synchronization. Don't do this.
  *
  * @author Thomson Tang
- * @version 1.0-SNAPSHOT
  * @version 8/6/13
  */
 public class NoVisibility {
