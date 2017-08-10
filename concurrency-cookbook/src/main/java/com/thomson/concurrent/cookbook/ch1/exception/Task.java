@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.exception;
 
 /**
  * Force an exception try to convert a string value into an int value.

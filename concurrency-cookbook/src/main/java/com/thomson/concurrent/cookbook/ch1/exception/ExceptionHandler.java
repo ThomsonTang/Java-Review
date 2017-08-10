@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.exception;
 
 /**
  * Implement a class to treat the unchecked exception.

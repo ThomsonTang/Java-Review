@@ -3,8 +3,6 @@ package com.thomson.concurrent.cookbook.ch1.daemon;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import threadmanagement.Event;
-
 /**
  * <h1>Creating and running a daemon thread</h1>
  *

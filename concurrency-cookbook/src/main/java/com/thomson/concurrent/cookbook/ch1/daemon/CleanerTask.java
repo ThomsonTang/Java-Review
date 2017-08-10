@@ -3,8 +3,6 @@ package com.thomson.concurrent.cookbook.ch1.daemon;
 import java.util.Date;
 import java.util.Deque;
 
-import threadmanagement.Event;
-
 /**
  * A daemon thread to clean the event.
  *

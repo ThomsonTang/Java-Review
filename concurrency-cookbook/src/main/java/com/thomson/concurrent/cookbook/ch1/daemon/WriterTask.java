@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.Deque;
 import java.util.concurrent.TimeUnit;
 
-import threadmanagement.Event;
-
 /**
  * A task which write an event and add the event in a deque.
  *
