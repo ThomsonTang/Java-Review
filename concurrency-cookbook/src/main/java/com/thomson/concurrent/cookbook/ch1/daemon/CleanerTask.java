@@ -1,7 +1,9 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.daemon;
 
 import java.util.Date;
 import java.util.Deque;
+
+import threadmanagement.Event;
 
 /**
  * A daemon thread to clean the event.
@@ -16,7 +18,7 @@ public class CleanerTask extends Thread {
 
     public CleanerTask(Deque<Event> deque) {
         this.deque = deque;
-        setDaemon(true);
+        setDaemon(true); // 调用Thread类的此方法设置线程为守护线程
     }
 
     @Override

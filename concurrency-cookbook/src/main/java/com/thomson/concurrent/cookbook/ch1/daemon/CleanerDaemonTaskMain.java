@@ -1,10 +1,12 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.daemon;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import threadmanagement.Event;
+
 /**
- * Created with IntelliJ IDEA.
+ * <h1>Creating and running a daemon thread</h1>
  *
  * @author ThomsonTang
  * @version 7/2/14
