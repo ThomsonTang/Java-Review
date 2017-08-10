@@ -1,10 +1,10 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.finalization;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Waiting for the finalization of a thread.
+ * <h1>Waiting for the finalization of a thread.</h1>
  *
  * @author ThomsonTang
  * @version 6/30/14

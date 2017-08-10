@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.finalization;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class NetworkConnectionsLoader implements Runnable {
     @Override
     public void run() {
-        System.out.printf("Beginning data source loading: %s\n", new Date());
+        System.out.printf("Beginning network connection loading: %s\n", new Date());
 
         try {
             TimeUnit.SECONDS.sleep(6);
