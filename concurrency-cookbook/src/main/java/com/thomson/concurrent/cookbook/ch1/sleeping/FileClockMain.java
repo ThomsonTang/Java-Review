@@ -1,8 +1,10 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.sleeping;
 
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <h1>Sleeping and resuming a thread</h1>
+ *
  * Use the <tt>sleep()</tt> method to write the actual date every second.
  *
  * @author ThomsonTang

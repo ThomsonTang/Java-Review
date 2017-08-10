@@ -1,11 +1,11 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.sleeping;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Create a date instance in a loop with 10 iterations, and call sleep() method to suspend execution
- * of the thread for one second as the tread throw the InterruptedException.
+ * Create a date instance in a loop with 10 iterations, and call sleep() method to suspend execution of the thread for
+ * one second as the tread throw the InterruptedException.
  *
  * @author ThomsonTang
  * @version 6/26/14

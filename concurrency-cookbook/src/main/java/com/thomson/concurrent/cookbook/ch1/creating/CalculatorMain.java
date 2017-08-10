@@ -1,17 +1,23 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.creating;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * 1. create 10 threads which use a class that implements Runnable interface.
- * 2. set the priority(max or min) and name for each thread.
+ * <h1>This sample includes two partials about thread management. One is about creating and running a thread, the other
+ * is for getting and setting thread information.</h1>
+ *
+ * <ul> <li>1. create 10 threads which use a class that implements Runnable interface. </li> <li> 2. set the
+ * priority(max or min) and name for each thread. </li> </ul>
  *
  * @author Thomson Tang
  * @version created: 11/11/13
  */
 public class CalculatorMain {
+    public CalculatorMain() {
+    }
+
     public static void main(String[] args) throws IOException {
         Thread[] threads = new Thread[10];
         Thread.State status[] = new Thread.State[10];

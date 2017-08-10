@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.creating;
 
 /**
  * Building Calculator class that implements Runnable interface.

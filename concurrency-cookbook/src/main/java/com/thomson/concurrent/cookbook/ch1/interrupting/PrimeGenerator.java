@@ -1,15 +1,14 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.interrupting;
 
 /**
  * Interrupting a thread.
  *
- * Java provides the interruption mechanism to indicate to a thread that we want to finish it.
- * The Thread class has an attribute that store a boolean value indicating whether the thread
- * has been interrupted or not. When you call the interrupt() method of a thread, you set that
- * attribute to true. The isInterrupted() method only returns the value of that attribute.
+ * Java provides the interruption mechanism to indicate to a thread that we want to finish it. The Thread class has an
+ * attribute that store a boolean value indicating whether the thread has been interrupted or not. When you call the
+ * {@link Thread#interrupt()} method of a thread, you set that attribute to true. The {@link Thread#isInterrupted()}
+ * method only returns the value of that attribute.
  *
- * User: ThomsonTang
- * Date: 11/13/13
+ * User: ThomsonTang Date: 11/13/13
  */
 public class PrimeGenerator extends Thread {
 
@@ -50,6 +49,6 @@ public class PrimeGenerator extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        task.interrupt();
+        task.interrupt(); //调用此方法中断一个线程
     }
 }

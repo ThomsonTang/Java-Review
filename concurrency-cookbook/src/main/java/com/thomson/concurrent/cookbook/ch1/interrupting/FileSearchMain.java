@@ -1,9 +1,9 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.interrupting;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * The main class to search a file.
+ * Controlling the interruption of a thread
  *
  * @author ThomsonTang
  * @version 6/24/14
