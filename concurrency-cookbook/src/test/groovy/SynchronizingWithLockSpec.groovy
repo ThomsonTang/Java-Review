@@ -1,5 +1,5 @@
-import basicthreadsynchronized.synchronizingWithLock.Job
-import basicthreadsynchronized.synchronizingWithLock.PrintQueue
+import com.thomson.concurrent.cookbook.ch2.lock.Job
+import com.thomson.concurrent.cookbook.ch2.lock.PrintQueue
 import spock.lang.Specification
 
 import java.util.concurrent.CountDownLatch
