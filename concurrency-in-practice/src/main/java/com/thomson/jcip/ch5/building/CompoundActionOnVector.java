@@ -15,7 +15,7 @@ import java.util.Vector;
  * @author Thomson Tang
  * @version Created: 11/08/2017.
  */
-public class VectorMain {
+public class CompoundActionOnVector {
 
     /**
      * 获取最后一个元素
@@ -59,8 +59,9 @@ public class VectorMain {
         threadB.start();
     }
 
+    //创建一个包含有若干元素的Vector对象
     private static Vector newVector() {
-        Vector vector = new Vector();
+        Vector<String> vector = new Vector<>();
         for (int i = 0; i < 1000000; i++) {
             vector.add("element-" + i);
         }
