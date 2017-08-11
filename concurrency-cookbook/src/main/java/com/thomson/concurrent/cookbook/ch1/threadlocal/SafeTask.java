@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.threadlocal;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;

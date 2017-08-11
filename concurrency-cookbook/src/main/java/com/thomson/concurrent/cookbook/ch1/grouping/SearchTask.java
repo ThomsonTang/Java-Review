@@ -1,11 +1,13 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.grouping;
+
+import com.thomson.concurrent.cookbook.ch1.grouping.Result;
 
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created with IntelliJ IDEA.
+ * A task simulates searching action.
  *
  * @author ThomsonTang
  * @version 7/10/14

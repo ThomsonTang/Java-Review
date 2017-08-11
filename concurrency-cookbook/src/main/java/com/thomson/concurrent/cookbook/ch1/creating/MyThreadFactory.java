@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.creating;
 
 import java.util.ArrayList;
 import java.util.Date;

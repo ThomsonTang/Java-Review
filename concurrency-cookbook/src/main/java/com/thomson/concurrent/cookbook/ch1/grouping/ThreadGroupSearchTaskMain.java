@@ -1,15 +1,18 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.grouping;
+
+import com.thomson.concurrent.cookbook.ch1.grouping.Result;
+import com.thomson.concurrent.cookbook.ch1.grouping.SearchTask;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * Group threads into a group <p> This allows us to treat the threads of a group as a single unit
- * and provides access to the Thread objects that belong to a group to do an operation with them.
- * </p>
+ * <h1>Grouping threads into a group</h1>
  *
- * <p> Java provides the {@link ThreadGroup} class to work with groups of threads. A ThreadGroup
- * object can be formed by Thread objects and by another ThreadGroup object, generating a tree
- * structure of threads. </p>
+ * Group threads into a group <p> This allows us to treat the threads of a group as a single unit and provides access to
+ * the Thread objects that belong to a group to do an operation with them. </p>
+ *
+ * <p> Java provides the {@link ThreadGroup} class to work with groups of threads. A ThreadGroup object can be formed by
+ * Thread objects and by another ThreadGroup object, generating a tree structure of threads. </p>
  *
  * @author ThomsonTang
  * @version 7/10/14

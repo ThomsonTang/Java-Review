@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import threadmanagement.UnsafeTask;
+import com.thomson.concurrent.cookbook.ch1.threadlocal.UnsafeTask;
 
 /**
  * 类说明

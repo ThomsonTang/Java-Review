@@ -1,7 +1,7 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.exception;
 
 /**
- * <h2>Processing uncontrolled exceptions in a group of threads</h2>
+ * <h1>Processing uncontrolled exceptions in a group of threads</h1>
  *
  * <p>This class is to establish a method that captures all the uncaught exceptions thrown by any
  * {@code Thread} of the {@code ThreadGroup} class. </p>

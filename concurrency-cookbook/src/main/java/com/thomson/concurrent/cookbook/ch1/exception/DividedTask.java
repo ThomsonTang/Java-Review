@@ -1,4 +1,4 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

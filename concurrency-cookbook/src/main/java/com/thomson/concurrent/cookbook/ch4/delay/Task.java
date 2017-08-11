@@ -1,4 +1,4 @@
-package ch4.executor.delay;
+package com.thomson.concurrent.cookbook.ch4.delay;
 
 import java.util.Date;
 import java.util.concurrent.Callable;

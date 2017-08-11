@@ -1,8 +1,10 @@
-package threadmanagement;
+package com.thomson.concurrent.cookbook.ch1.threadlocal;
 
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <h1>Using local thread variables</h1>
+ *
  * The main class to test the use of ThreadLocal or not.
  *
  * @author ThomsonTang
