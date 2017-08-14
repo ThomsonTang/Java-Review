@@ -4,17 +4,17 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Create a task that write current time in console, sleeping for a random time, and
- * write time again in the end.
+ * Create a task that write current time in console, sleeping for a random time, and write time again in the end.
  *
  * @author ThomsonTang
  * @version 7/8/14
  */
 public class UnsafeTask implements Runnable {
-    Date startDate = new Date();
+    private Date startDate;
 
     @Override
     public void run() {
+        startDate = new Date();
         System.out.printf("Start thread: %s: %s\n", Thread.currentThread().getId(), startDate);
 
         try {

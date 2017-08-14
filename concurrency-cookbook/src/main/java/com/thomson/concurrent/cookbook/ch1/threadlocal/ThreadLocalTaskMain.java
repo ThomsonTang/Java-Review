@@ -13,12 +13,12 @@ import java.util.concurrent.TimeUnit;
 public class ThreadLocalTaskMain {
     public static void main(String[] args) {
         // unsafe task
-//        UnsafeTask task = new UnsafeTask();
+        UnsafeTask task = new UnsafeTask();
 
         // safe task
-        SafeTask task = new SafeTask();
+//        SafeTask task = new SafeTask();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(task);
             thread.start();
             try {
