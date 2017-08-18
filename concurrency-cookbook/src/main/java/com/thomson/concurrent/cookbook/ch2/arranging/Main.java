@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
  *
  * <h2>How it works...</h2>
  * <p>When you use the {@code synchronized} keyword to protect a block of code, you use an object as
- * as parameter. JVM guarantees that only one thread can have access to <strong>all the blocks of code protected
+ * a parameter. JVM guarantees that only one thread can have access to <strong>all the blocks of code protected
  * with that object</strong>(note that we always talk about objects, not about classes.).</p>
  *
  * <p>In this example, we have an object that controls access to the {@code vacanciesCinema1} attribute,

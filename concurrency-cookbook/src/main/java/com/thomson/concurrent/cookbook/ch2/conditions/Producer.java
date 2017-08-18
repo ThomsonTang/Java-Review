@@ -7,16 +7,16 @@ package com.thomson.concurrent.cookbook.ch2.conditions;
  * @version Created ：2016-8/16/16-18:09
  */
 public class Producer implements Runnable {
-    private EventStorage storage;
+    private EventStorage<String> storage;
 
-    public Producer(EventStorage storage) {
+    public Producer(EventStorage<String> storage) {
         this.storage = storage;
     }
 
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            storage.set();
+            storage.set(String.valueOf(i));
         }
     }
 }

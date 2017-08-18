@@ -7,9 +7,9 @@ package com.thomson.concurrent.cookbook.ch2.conditions;
  * @version Created ：2016-8/16/16-18:11
  */
 public class Consumer implements Runnable {
-    private EventStorage storage;
+    private EventStorage<String> storage;
 
-    public Consumer(EventStorage storage) {
+    public Consumer(EventStorage<String> storage) {
         this.storage = storage;
     }
 
