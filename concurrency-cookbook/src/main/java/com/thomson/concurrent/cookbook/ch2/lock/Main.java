@@ -1,6 +1,5 @@
 package com.thomson.concurrent.cookbook.ch2.lock;
 
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
 
 /**
@@ -20,16 +19,14 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         int threadCount = 10;
         PrintQueue printQueue = new PrintQueue();
-        final CountDownLatch latch = new CountDownLatch(threadCount);
         Thread jobs[] = new Thread[threadCount];
 
         for (int i = 0; i < threadCount; i++) {
-            jobs[i] = new Thread(new Job(printQueue, latch));
+            jobs[i] = new Thread(new Job(printQueue));
         }
 
         for (int i = 0; i < threadCount; i++) {
             jobs[i].start();
         }
-        latch.await();
     }
 }

@@ -7,7 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * The event storage.
+ * The event storage. This class implements the Producer-Consumer problem using the {@code synchronized} keyword
+ * and {@link Object#wait()}, {@link Object#notify()}, {@link Object#notifyAll()} methods.
  *
  * @author Thomson Tang
  * @version Created ：2016-8/11/16-17:56
