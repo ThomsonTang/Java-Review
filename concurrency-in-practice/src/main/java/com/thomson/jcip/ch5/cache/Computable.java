@@ -1,7 +1,7 @@
 package com.thomson.jcip.ch5.cache;
 
 /**
- * 类说明
+ * Indicate an operation can be computed.
  *
  * @author Thomson Tang
  * @version Created: 21/08/2017.

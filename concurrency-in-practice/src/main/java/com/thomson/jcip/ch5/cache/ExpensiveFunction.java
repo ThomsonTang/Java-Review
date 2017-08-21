@@ -3,7 +3,7 @@ package com.thomson.jcip.ch5.cache;
 import java.math.BigInteger;
 
 /**
- * 类说明
+ * An implementation of {@link Computable} which produce an BigInteger result after a deep computation.
  *
  * @author Thomson Tang
  * @version Created: 21/08/2017.
