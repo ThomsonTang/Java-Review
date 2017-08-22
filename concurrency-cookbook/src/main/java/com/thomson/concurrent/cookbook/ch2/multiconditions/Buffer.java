@@ -41,8 +41,40 @@ public class Buffer {
                 space.await();
             }
             buffer.offer(line);
+            logger.info("{}: inserted line: {}", Thread.currentThread().getName(), buffer.size());
+            lines.signalAll();
         } catch (InterruptedException e) {
             logger.error(e.getMessage(), e);
+        } finally {
+            lock.unlock();
         }
+    }
+
+    public String get() {
+        String line = null;
+        lock.lock();
+        try {
+            while (buffer.size() == 0 && hasPendingLines()) {
+                lines.await();
+            }
+            if (hasPendingLines()) {
+                line = buffer.poll();
+                logger.info("{}: line read: {}", Thread.currentThread().getName(), buffer.size());
+                space.signalAll();
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
+        return line;
+    }
+
+    public boolean hasPendingLines() {
+        return pendingLines || buffer.size() > 0;
+    }
+
+    public void setPendingLines(boolean pendingLines) {
+        this.pendingLines = pendingLines;
     }
 }
