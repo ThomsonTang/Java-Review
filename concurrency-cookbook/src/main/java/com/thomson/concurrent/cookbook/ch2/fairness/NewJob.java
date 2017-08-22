@@ -14,11 +14,9 @@ import java.util.concurrent.CountDownLatch;
 public class NewJob implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(NewJob.class);
     private NewPrintQueue printQueue;
-    private CountDownLatch countDownLatch;
 
     public NewJob(NewPrintQueue printQueue) {
         this.printQueue = printQueue;
-//        this.countDownLatch = countDownLatch;
     }
 
     @Override

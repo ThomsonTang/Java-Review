@@ -15,7 +15,6 @@ public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         int threadCount = 10;
-//        final CountDownLatch countDownLatch = new CountDownLatch(threadCount);
         NewPrintQueue printQueue = new NewPrintQueue();
         Thread[] jobs = new Thread[threadCount];
 
