@@ -3,7 +3,9 @@ package com.thomson.concurrent.cookbook.ch3.semaphore;
 import java.util.concurrent.Semaphore;
 
 /**
-* The scene class to test.
+ * <h2>Controlling concurrent access to a resource</h2>
+ *
+ * The scene class to test.
  *
  * How it works:
  *
