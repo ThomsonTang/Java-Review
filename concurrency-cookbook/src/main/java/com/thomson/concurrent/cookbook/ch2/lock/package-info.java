@@ -1,5 +1,5 @@
 /**
- * <h2>Synchronizing a block of code with a Local</h2>
+ * <h2>Synchronizing a block of code with a Lock</h2>
  *
  * Java provides another mechanism for the synchronization of blocks of code. It's a more powerful
  * and flexible mechanism than the {@code synchronized} keyword. It's based on the {@link java.util.concurrent.locks.Lock}

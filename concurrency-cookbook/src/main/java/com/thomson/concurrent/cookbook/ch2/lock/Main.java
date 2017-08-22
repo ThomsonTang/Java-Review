@@ -22,7 +22,7 @@ public class Main {
         Thread jobs[] = new Thread[threadCount];
 
         for (int i = 0; i < threadCount; i++) {
-            jobs[i] = new Thread(new Job(printQueue));
+            jobs[i] = new Thread(new Job(printQueue), "Thread-" + i);
         }
 
         for (int i = 0; i < threadCount; i++) {

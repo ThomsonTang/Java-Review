@@ -19,6 +19,7 @@ public class PrintQueue {
     public void printJob(Object document) {
         queueLock.lock();
         try {
+            logger.info("{}: start printing...", Thread.currentThread().getName());
             Long duration = (long) (Math.random() * 10000);
             logger.info("{}: PintQueue: Printing a Job during {}  seconds.", Thread.currentThread().getName(),
                     (duration / 1000));
@@ -26,6 +27,7 @@ public class PrintQueue {
         } catch (InterruptedException e) {
             logger.error("the error occurred. ", e);
         } finally {
+            logger.info("{}: end printing...", Thread.currentThread().getName());
             queueLock.unlock();
         }
     }
