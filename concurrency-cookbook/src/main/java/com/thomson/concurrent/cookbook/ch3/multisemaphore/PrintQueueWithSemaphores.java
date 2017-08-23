@@ -14,16 +14,16 @@ import java.util.concurrent.locks.ReentrantLock;
 public class PrintQueueWithSemaphores {
     private final Semaphore semaphore;
     private boolean[] freePrinters;
-    private Lock lockPrinters;
+    private Lock lockPrinters; // to protect the access to the freePrinters array.
 
     public PrintQueueWithSemaphores() {
-        this.semaphore = new Semaphore(3);
+        this.semaphore = new Semaphore(3); // assume there are 3 free printers.
         lockPrinters = new ReentrantLock();
         initFreePrinters();
     }
 
     private void initFreePrinters() {
-        this.freePrinters = new boolean[3];
+        this.freePrinters = new boolean[3]; // assume there are 3 free printers.
         for (int i = 0; i < 3; i++) {
             freePrinters[i] = true;
         }
@@ -48,6 +48,7 @@ public class PrintQueueWithSemaphores {
         }
     }
 
+    //通过遍历这个boolean类型的数组，来查看是否有可用的printer
     private int getPrinter() {
         int ret = -1;
         try {
