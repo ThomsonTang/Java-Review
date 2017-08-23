@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
 /**
  * <h2>Web Server Using a Thread Pool.</h2>
  *
+ * 通过使用线程池将请求任务的提交与实际执行解耦开来，这样我们只需采用另一种不同的Executor的实现，就可以改变服务器的行为。
+ *
  * @author Thomson Tang
  * @version Created: 23/08/2017.
  */
