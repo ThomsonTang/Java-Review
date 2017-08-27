@@ -65,14 +65,14 @@ public class FutureRenderer {
      * @return 图片信息
      */
     private List<ImageInfo> scanForImageInfo(CharSequence source) {
-        return null;
+        return new ArrayList<>();
     }
 
     // 图片信息类
     private class ImageInfo {
         public ImageData downloadImage() {
             // 下载具体的图片数据
-            return null;
+            return new ImageData();
         }
     }
 
