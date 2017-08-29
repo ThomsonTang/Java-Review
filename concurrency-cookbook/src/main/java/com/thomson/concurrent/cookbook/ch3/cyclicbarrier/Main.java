@@ -6,7 +6,12 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * 类说明
+ * <h2>Synchronizing tasks in a common point</h2>
+ *
+ * In the example, you will look for a number in a matrix of numbers.
+ * The matrix will be divided in subsets(using the divide and conquer technique),
+ * so each thread will look for the number in one subset. Once all the threads
+ * have finished their job, a final task will unify the result of them.
  *
  * @author Thomson Tang
  * @version Created: 28/08/2017.
