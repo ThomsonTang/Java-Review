@@ -1,9 +1,5 @@
 package com.thomson.jcip.ch6.execution.render;
 
-import com.thomson.jcip.ch6.execution.render.ImageData;
-import com.thomson.jcip.ch6.execution.render.ImageInfo;
-import com.thomson.jcip.ch6.execution.render.ImageInfoService;
-
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
