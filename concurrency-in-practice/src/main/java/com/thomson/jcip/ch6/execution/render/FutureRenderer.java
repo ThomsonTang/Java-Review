@@ -1,4 +1,4 @@
-package com.thomson.jcip.ch6.execution;
+package com.thomson.jcip.ch6.execution.render;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+
+import static com.thomson.jcip.ch6.execution.render.ImageInfoService.scanForImageInfo;
 
 /**
  * 使用Future等待图像下载
@@ -56,27 +58,5 @@ public class FutureRenderer {
 
     private void renderText(CharSequence source) {
         // 渲染文本...
-    }
-
-    /**
-     * 扫描并获得页面中所有的图片信息
-     *
-     * @param source 页面内容
-     * @return 图片信息
-     */
-    private List<ImageInfo> scanForImageInfo(CharSequence source) {
-        return new ArrayList<>();
-    }
-
-    // 图片信息类
-    private class ImageInfo {
-        public ImageData downloadImage() {
-            // 下载具体的图片数据
-            return new ImageData();
-        }
-    }
-
-    // 图片数据类
-    private class ImageData {
     }
 }
