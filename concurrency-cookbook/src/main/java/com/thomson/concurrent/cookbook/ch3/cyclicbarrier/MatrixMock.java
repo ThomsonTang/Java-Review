@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Random;
 
 /**
- * 类说明
+ * This class will generate a random matrix of numbers between one and 10 where the threads are going to look for a number.
  *
  * @author Thomson Tang
  * @version Created: 28/08/2017.
