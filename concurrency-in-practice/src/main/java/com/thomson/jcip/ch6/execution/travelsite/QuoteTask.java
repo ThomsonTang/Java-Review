@@ -1,6 +1,7 @@
 package com.thomson.jcip.ch6.execution.travelsite;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.CancellationException;
 
 /**
  * 报价任务
@@ -22,4 +23,11 @@ public class QuoteTask implements Callable<TravelQuote> {
         return company.solicitQuote(travelInfo);
     }
 
+    public TravelQuote getFailureQuote(Throwable cause) {
+        return null;
+    }
+
+    public TravelQuote getTimeoutQuote(CancellationException e) {
+        return null;
+    }
 }
