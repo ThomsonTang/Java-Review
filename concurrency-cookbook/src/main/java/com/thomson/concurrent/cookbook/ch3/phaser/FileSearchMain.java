@@ -19,8 +19,8 @@ import java.util.concurrent.Phaser;
  * @author Thomson Tang
  * @version Created: 31/08/2017.
  */
-public class Main {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
+public class FileSearchMain {
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileSearchMain.class);
 
     public static void main(String[] args) {
         Phaser phaser = new Phaser(3);
