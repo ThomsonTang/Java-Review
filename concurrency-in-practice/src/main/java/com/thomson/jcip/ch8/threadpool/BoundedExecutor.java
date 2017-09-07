@@ -48,6 +48,7 @@ public class BoundedExecutor {
         int threads = 2;
         int capacity = 5;
         ThreadPoolExecutor executor = new ThreadPoolExecutor(threads, threads, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(capacity));
+        //请注意，这里使用的饱和策略是：调用者运行策略。所以当任务队列满了后，新的任务无法提交，只能退回到调用者，让调用者处理。在本例中就是Main线程。
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
 
         BoundedExecutor boundedExecutor = new BoundedExecutor(executor, 5);
