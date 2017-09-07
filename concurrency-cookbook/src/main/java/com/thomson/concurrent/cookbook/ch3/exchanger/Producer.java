@@ -28,6 +28,23 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
+        int cycle = 1;
+        for (int i = 0; i < 2; i++) {
+            LOGGER.info("Producer: Cycle {}", cycle);
+            for (int j = 0; j < 5; j++) {
+                String message = "Event " + ((i * 10) + j);
+                LOGGER.info("Producer: {}", message);
+                buffer.add(message);
+            }
 
+            // interchange the data with the consumer
+            try {
+                buffer = exchanger.exchange(buffer);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            LOGGER.info("Producer: {}", buffer.size());
+            cycle++;
+        }
     }
 }
