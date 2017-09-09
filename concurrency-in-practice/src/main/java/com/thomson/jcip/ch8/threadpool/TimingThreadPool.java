@@ -20,6 +20,10 @@ public class TimingThreadPool extends ThreadPoolExecutor {
     private final AtomicLong numTasks = new AtomicLong();
     private final AtomicLong totalTime = new AtomicLong();
 
+    public TimingThreadPool(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue<Runnable> workQueue) {
+        super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
+    }
+
     @Override
     protected void beforeExecute(Thread thread, Runnable runnable) {
         super.beforeExecute(thread, runnable);
@@ -38,11 +42,14 @@ public class TimingThreadPool extends ThreadPoolExecutor {
         } finally {
             super.afterExecute(r, t);
         }
-
     }
 
-    public TimingThreadPool(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue<Runnable> workQueue) {
-        super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
-
+    @Override
+    protected void terminated() {
+        try {
+            LOGGER.info("Terminated: avg time={}", totalTime.get() / numTasks.get());
+        } finally {
+            super.terminated();
+        }
     }
 }
