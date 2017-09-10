@@ -79,11 +79,11 @@ public class RecursiveApp {
     }
 
     private class Node<T> {
-        public T compute() {
+        private T compute() {
             return null;
         }
 
-        public List<Node<T>> getChildren() {
+        private List<Node<T>> getChildren() {
             return null;
         }
     }
