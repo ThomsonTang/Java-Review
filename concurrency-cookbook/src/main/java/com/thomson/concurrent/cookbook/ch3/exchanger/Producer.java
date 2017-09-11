@@ -9,6 +9,9 @@ import java.util.concurrent.Exchanger;
 /**
  * The Producer class.
  *
+ * The producer begins its execution with an empty buffer. It creates 10 strings, store it in the buffer,
+ * and uses the exchanger to synchronize with the consumer.
+ *
  * @author Thomson Tang
  * @version Created: 07/09/2017.
  */
@@ -29,9 +32,9 @@ public class Producer implements Runnable {
     @Override
     public void run() {
         int cycle = 1;
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             LOGGER.info("Producer: Cycle {}", cycle);
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 10; j++) {
                 String message = "Event " + ((i * 10) + j);
                 LOGGER.info("Producer: {}", message);
                 buffer.add(message);

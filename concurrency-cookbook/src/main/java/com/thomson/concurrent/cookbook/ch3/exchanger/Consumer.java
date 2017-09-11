@@ -9,6 +9,9 @@ import java.util.concurrent.Exchanger;
 /**
  * implement the consumer.
  *
+ * The Consumer begins with an empty buffer and calls {@code Exchanger} to synchronize
+ * with the producer. It needs data to consume.
+ *
  * @author Thomson Tang
  * @version Created: 07/09/2017.
  */
