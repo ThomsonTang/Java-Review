@@ -3,6 +3,7 @@ package com.thomson.concurrent.cookbook.ch4.creating;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -17,7 +18,10 @@ public class Server {
     private ThreadPoolExecutor executor;
 
     public Server() {
-        executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+        // 1. 默认使用的是自动扩缩容的线程池，这种线程池最大值为Integer.MAX_VALUE，最小值为0
+//        executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+        // 2. 当有大量的耗时计算任务时，自动扩缩容的线程池可能会带来较差的性能，这时可以使用固定大小的线程池
+        executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
     }
 
     public void executeTask(ExecTask task) {
