@@ -25,8 +25,8 @@ public class UserValidator {
     public boolean validate(String name, String password) {
         Random random = new Random();
         try {
-        long duration = (long) (Math.random() * 10);
-        LOGGER.info("Validator {}: Validating a user during {} seconds.", this.name, duration);
+            long duration = (long) (Math.random() * 10);
+            LOGGER.info("Validator {}: Validating a user during {} seconds.", this.name, duration);
             TimeUnit.SECONDS.sleep(duration);
         } catch (InterruptedException e) {
             return false;
