@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 产品对象生成器。
+ * 商品列表生成器，根据指定大小生成相应的商品列表。
  *
  * @author Thomson Tang
  * @version Created: 19/09/2017.
