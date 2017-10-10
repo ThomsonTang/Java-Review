@@ -3,6 +3,7 @@ package com.thomson.concurrent.cookbook.ch5.joining;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.RecursiveTask;
 
 /**
@@ -26,7 +27,7 @@ public class DocumentTask extends RecursiveTask<Integer> {
 
     @Override
     protected Integer compute() {
-        int result;
+        int result = 0;
         if (end - start < 10) {
             result = processLines(document, start, end, word);
         } else {
@@ -36,11 +37,21 @@ public class DocumentTask extends RecursiveTask<Integer> {
             invokeAll(documentTask1, documentTask2);
 
             try {
-                groupResults(documentTask1.get(), documentTask2.get());
-            } catch () {
-
+                result = groupResults(documentTask1.get(), documentTask2.get());
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
             }
         }
         return result;
     }
+
+    private Integer processLines(String[][] document, int start, int end, String word) {
+        return null;
+    }
+
+    private Integer groupResults(Integer integer, Integer integer1) {
+        return null;
+    }
+
+
 }
