@@ -18,8 +18,16 @@ public class LineTask extends RecursiveTask<Integer> {
     private int start, end;
     private String word;
 
+    public LineTask(String[] line, int start, int end, String word) {
+        this.line = line;
+        this.start = start;
+        this.end = end;
+        this.word = word;
+    }
+
     @Override
     protected Integer compute() {
+
         return null;
     }
 }

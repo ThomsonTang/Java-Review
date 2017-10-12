@@ -3,6 +3,8 @@ package com.thomson.concurrent.cookbook.ch5.joining;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.RecursiveTask;
 
@@ -46,6 +48,9 @@ public class DocumentTask extends RecursiveTask<Integer> {
     }
 
     private Integer processLines(String[][] document, int start, int end, String word) {
+        List<LineTask> tasks = new ArrayList<>();
+        for (int i = start; i < end; i++) {
+        }
         return null;
     }
 
